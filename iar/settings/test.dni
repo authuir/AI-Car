@@ -1,0 +1,183 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=831893004
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=0
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 119
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[array_types]
+Fmt0=uint8[100]	3	0
+Fmt1=uint8[10]	3	0
+Fmt2=uint8[120]	3	0
+Fmt3=uint8[14]	3	0
+Fmt4=uint8[150]	3	0
+Fmt5=uint8[15]	4	0
+Fmt6=uint8[16]	3	0
+Fmt7=uint8[20]	3	0
+Fmt8=uint8[210]	3	0
+Fmt9=uint8[260]	3	0
+Fmt10=uint8[30]	3	0
+Fmt11=uint8[310]	3	0
+Fmt12=uint8[40]	3	0
+Fmt13=uint8[4]	3	0
+Fmt14=uint8[50]	3	0
+Fmt15=uint8[5]	3	0
+Fmt16=uint8[6]	3	0
+Fmt17=uint8[7]	4	0
+Fmt18=uint8[8]	3	0
+[watch_formats]
+Fmt0={W}0:Accel_X_Data	3	0
+Fmt1={W}0:Accel_Y_Data	3	0
+Fmt2={W}0:Gyro_Y_Data	3	0
+Fmt3={W}0:H	4	0
+Fmt4={W}0:L	4	0
+Fmt5={W}0:L2	4	0
+Fmt6={W}0:SIM_SCGC5	4	0
+Fmt7={W}0:a	3	0
+Fmt8={W}0:aa	4	0
+Fmt9={W}0:accuracy	3	0
+Fmt10={W}0:add_ave	4	2
+Fmt11={W}0:buffer1	4	6
+Fmt12={W}0:buffer2	4	6
+Fmt13={W}0:ch	4	0
+Fmt14={W}0:data	3	3
+Fmt15={W}0:date	3	2
+Fmt16={W}0:date1	3	0
+Fmt17={W}0:dd	4	0
+Fmt18={W}0:i	3	0
+Fmt19={W}0:j	3	0
+Fmt20={W}0:line_left	3	0
+Fmt21={W}0:line_right	3	0
+Fmt22={W}0:read_date	4	0
+Fmt23={W}0:read_value	4	0
+Fmt24={W}0:res	3	0
+Fmt25={W}0:sample_ave	3	0
+Fmt26={W}0:st.reg	4	0
+Fmt27={W}0:st.reg->pwr_mgmt_1	4	0
+Fmt28={W}0:temp	3	0
+Fmt29={W}0:time	3	0
+Fmt30={W}0:times	3	0
+Fmt31={W}0:tmp2	4	0
+Fmt32={W}0:value	3	0
+Fmt33={W}0:x	3	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "C:\Users\love  ben\Desktop\iar\main.c" ""
+A1=_ "C:\Users\love  ben\Desktop\iar\startup_MK60F15.s" ""
+Count=2
+SuppressDialog=1
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=

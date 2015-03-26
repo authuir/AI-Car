@@ -1,0 +1,179 @@
+#include "all.h"
+uint16  i=0,j=0;
+#define  X_MAX     320
+#define  Y_MAX     15
+uint8   date[X_MAX][Y_MAX]={0};
+uint8 flag_photo=0,read_date=0,temp_l=0,temp_r=0,time=0,ave_now=0;
+#define ave_time    10
+int32    add_ave=0;
+uint8 read_value=0,k=0;
+void main()
+ {
+     SYS_CLOCK_SET(SYS_CLOCK_150M,1,2,3,6);
+     DisableInterrupts
+     //VSYNC中断
+     GPIO_INIT(VSYNC_PORT,VSYNC_PIN,INPUT);
+     GPIOPULL_SET(VSYNC_PORT,VSYNC_PIN,PULL_UP);
+     Enable_IRQ(INT_PORTB);
+     GPIOINT_Enable(VSYNC_PORT,VSYNC_PIN,LEVEL_FALLING);
+     
+     //HREF中断
+     GPIO_INIT(HREF_PORT,HREF_PIN,INPUT);
+     GPIOPULL_SET(HREF_PORT,HREF_PIN,PULL_DOWN);
+     GPIOINT_Enable(HREF_PORT,HREF_PIN,LEVEL_RISING);
+     
+     //PCLK中断
+     GPIO_INIT(PCLK_PORT,PCKL_PIN,INPUT);
+     GPIOPULL_SET(PCLK_PORT,PCKL_PIN,PULL_DOWN);
+     GPIOINT_Enable(PCLK_PORT,PCKL_PIN,DMA_RISING);
+     
+     //DMA初始化
+     DMA_Init_new(DMAMUX0, DMA_CH0,Src_PORTE,X_MAX*Y_MAX,1,DMA_Normal_Mode);
+     DMA_Source_new(DMA_CH0, 0X400FF0D0,0, DMA_8BIT, 0);
+     DMA_Destination_new(DMA_CH0, date,1, DMA_8BIT, 0);
+     DMA_Int_Enable(DMA_CH0,DMA_MAJOR);
+     //Enable_IRQ(INT_DMA0_DMA16);
+     //设置输入端口
+     GPIO_INIT(PORTD,0,INPUT);
+     GPIO_INIT(PORTD,1,INPUT);
+     GPIO_INIT(PORTD,2,INPUT);
+     GPIO_INIT(PORTD,3,INPUT);
+     GPIO_INIT(PORTD,4,INPUT);
+     GPIO_INIT(PORTD,5,INPUT);  
+     GPIO_INIT(PORTD,6,INPUT);
+     GPIO_INIT(PORTD,7,INPUT);
+     GPIOPULL_SET(PORTD,0,PULL_DOWN);
+     GPIOPULL_SET(PORTD,1,PULL_DOWN);
+     GPIOPULL_SET(PORTD,2,PULL_DOWN);
+     GPIOPULL_SET(PORTD,3,PULL_DOWN);
+     GPIOPULL_SET(PORTD,4,PULL_DOWN);
+     GPIOPULL_SET(PORTD,5,PULL_DOWN);
+     GPIOPULL_SET(PORTD,6,PULL_DOWN);
+     GPIOPULL_SET(PORTD,7,PULL_DOWN);
+    
+    //UART
+    GPIOType_UART(PORTB_16_17);
+    UART_INIT(UART0,75000,115200);
+    
+    SET_IRQ_PRIOR(INT_PORTB,0);
+    SET_IRQ_PRIOR(INT_PORTC,1);
+    
+    SCCB_init();
+    SCCB_write(0x21,0x12,0x80);//复位所有寄存器
+    SCCB_write(0x21,0x0d,0xc1);
+    SCCB_write(0x21,0x11,0x00);
+    SCCB_write(0x21,0x09,0x03);
+    SCCB_write(0x21,0x0c,0xd0);
+    SCCB_write(0x21,0x12,0x40);
+    SCCB_write(0x21,0x17,0x3f);
+    SCCB_write(0x21,0x18,0x50);
+    SCCB_write(0x21,0x19,0x03);
+    SCCB_write(0x21,0x1a,0x78);
+    SCCB_write(0x21,0x32,0x00);
+    SCCB_write(0x21,0xA0,0x0a);
+    SCCB_write(0x21,0x63,0xe0);
+    SCCB_write(0x21,0xAC,0xff);
+    SCCB_write(0x21,0x64,0x0c);
+    SCCB_write(0x21,0x65,0x00);
+    SCCB_write(0x21,0x66,0x00);
+    
+    SCCB_write(0x21,0x2A,0x00);
+    
+    SCCB_write(0x21,0x7E,0x0C);
+    SCCB_write(0x21,0x7F,0x16);
+    SCCB_write(0x21,0x80,0x2A);
+    SCCB_write(0x21,0x81,0x4E);
+    SCCB_write(0x21,0x82,0x61);
+    SCCB_write(0x21,0x83,0x6F);
+    SCCB_write(0x21,0x84,0x7B);
+    SCCB_write(0x21,0x85,0x86);
+    SCCB_write(0x21,0x86,0x8E);
+    SCCB_write(0x21,0x87,0x97);
+    SCCB_write(0x21,0x88,0xA4);
+    SCCB_write(0x21,0x89,0xAF);
+    SCCB_write(0x21,0x8A,0xC5);
+    SCCB_write(0x21,0x8B,0xD7);
+    SCCB_write(0x21,0x8B,0xE8);
+    
+    SCCB_write(0x21,0x8D,0x20);
+    SCCB_write(0x21,0x4A,0x00);
+    SCCB_write(0x21,0x49,0x13);
+    SCCB_write(0x21,0x47,0x08);
+    SCCB_write(0x21,0x4B,0x14);
+    SCCB_write(0x21,0x4C,0x17);
+    SCCB_write(0x21,0x46,0x05);
+    SCCB_write(0x21,0x22,0x99);
+    SCCB_write(0x21,0x23,0x03);
+    SCCB_write(0x21,0xA6,0x04);
+    SCCB_write(0x21,0x9B,0x00);
+    SCCB_write(0x21,0x9C,0xFF);
+    SCCB_write(0x21,0xAB,0x06);
+    SCCB_write(0x21,0x9E,0x11);
+    SCCB_write(0x21,0x9F,0x02);
+    
+    
+    
+    SCCB_write(0x21,0x2C,0x3C);
+    SCCB_write(0x21,0x29,0x78);
+    //SCCB_write(0x21,0x12,0x80);//复位所有寄存器
+    
+ 
+    EnableInterrupts
+     while(1)
+      {
+          if(flag_photo)
+           {
+               flag_photo=0;
+               UART_S1(UART0,0Xff);
+               for(i=0;i<X_MAX;i++)
+                   for(j=0;j<Y_MAX;j++)
+                    {
+                        for(k=0;k<8;k++)
+                         {
+                             if((date[i][j]&0x80))
+                                  UART_S1(UART0,0);
+                             else UART_S1(UART0,254);
+                             date[i][j]<<=1;
+                         }
+                    }
+
+               i=0;j=0;
+               GPIOINT_Clear(PORTB);
+               EnableInterrupts
+               Enable_IRQ(INT_PORTB);
+           }
+      }
+ }
+void PORTB_IRQHandler(void)
+ {
+     DisableInterrupts
+     GPIOINT_Clear(PORTB);
+     Disable_IRQ(INT_PORTB);
+     DMA_Enable_new(DMAMUX0,DMA_CH0);
+     //Enable_IRQ(INT_PORTC);
+     //GPIOINT_Clear(PORTC);
+     EnableInterrupts
+ }
+void PORTC_IRQHandler(void)
+ {
+     DMA_Enable_new(DMAMUX0,DMA_CH0);
+       if(i>=X_MAX)
+             {
+                 flag_photo=1;
+                 Disable_IRQ(INT_PORTC);
+                 DisableInterrupts;
+                 DMA_Disable_new(DMAMUX0,DMA_CH0);
+                 DMA_SetDestAddress(DMA_CH0, date);       
+             }
+       i++;
+       GPIOINT_Clear(PORTC);
+ }
+
+void DMA0_DMA16_IRQHandler(void)
+ {
+     DMA_Clear_Int(DMA_CH0);
+     DMA_Disable_new(DMAMUX0,DMA_CH0);
+     DMA_SetDestAddress(DMA_CH0, date);
+     flag_photo=1;
+     //DisableInterrupts
+ }
