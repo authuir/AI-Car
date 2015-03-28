@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=831893004
+Checksum=-1710873426
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -154,13 +154,6 @@ Fmt30={W}0:times	3	0
 Fmt31={W}0:tmp2	4	0
 Fmt32={W}0:value	3	0
 Fmt33={W}0:x	3	0
-[Trace1]
-Enabled=0
-ShowSource=1
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Count=0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -168,11 +161,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Aliases]
-A0=_ "C:\Users\love  ben\Desktop\iar\main.c" ""
-A1=_ "C:\Users\love  ben\Desktop\iar\startup_MK60F15.s" ""
-Count=2
-SuppressDialog=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -181,3 +169,13 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.77.6" 0 0 1 "" 0 "" 0
+Count=1
+[Aliases]
+A0=_ "C:\Users\love  ben\Desktop\iar\main.c" ""
+A1=_ "C:\Users\love  ben\Desktop\iar\startup_MK60F15.s" ""
+Count=2
+SuppressDialog=1

@@ -1,11 +1,11 @@
 #ifndef __SCCB_H__
 #define __SCCB_H__
 
-#define SIO_C_PORT  PORTB
-#define SIO_C_PIN   23
+#define SIO_C_PORT  PORTC
+#define SIO_C_PIN   12
 
-#define SIO_D_PORT  PORTB
-#define SIO_D_PIN   19
+#define SIO_D_PORT  PORTC
+#define SIO_D_PIN   13
 
 #define SIO_C_Set   GPIO_SET(SIO_C_PORT,SIO_C_PIN,1)
 #define SIO_C_Clear GPIO_SET(SIO_C_PORT,SIO_C_PIN,0)
