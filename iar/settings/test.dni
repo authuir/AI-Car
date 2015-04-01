@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1710873426
+Checksum=1979612733
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -172,7 +172,7 @@ Exclusions=
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.77.6" 0 0 1 "" 0 "" 0
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.90.20" 0 0 1 "" 0 "" 0
 Count=1
 [Aliases]
 A0=_ "C:\Users\love  ben\Desktop\iar\main.c" ""

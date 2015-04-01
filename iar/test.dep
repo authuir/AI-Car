@@ -6,627 +6,171 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\my ku\src\PIT.c</file>
-      <file>$PROJ_DIR$\my ku\src\SD.c</file>
-      <file>$PROJ_DIR$\my ku\src\PIT.h</file>
+      <file>$PROJ_DIR$\my ku\src\I2C_moni.c</file>
+      <file>$PROJ_DIR$\my ku\src\INT.c</file>
+      <file>$PROJ_DIR$\my ku\src\I2C_moni.h</file>
+      <file>$PROJ_DIR$\my ku\src\LCD.c</file>
+      <file>$PROJ_DIR$\my ku\src\INT.h</file>
+      <file>$PROJ_DIR$\my ku\lib\MS5611.h</file>
+      <file>$PROJ_DIR$\my ku\lib\MS5611.c</file>
+      <file>$PROJ_DIR$\my ku\src\ADC.c</file>
+      <file>$PROJ_DIR$\my ku\src\ADC.h</file>
+      <file>$PROJ_DIR$\my ku\src\all.h</file>
       <file>$PROJ_DIR$\my ku\src\common.c</file>
       <file>$PROJ_DIR$\my ku\src\common.h</file>
       <file>$PROJ_DIR$\my ku\src\DAC.c</file>
       <file>$PROJ_DIR$\my ku\src\DAC.h</file>
+      <file>$PROJ_DIR$\my ku\src\DMA.h</file>
       <file>$PROJ_DIR$\my ku\src\DMA.c</file>
       <file>$PROJ_DIR$\my ku\src\FTM.c</file>
-      <file>$PROJ_DIR$\my ku\src\DMA.h</file>
-      <file>$PROJ_DIR$\my ku\project\camera.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\my ku\src\FTM.h</file>
+      <file>$PROJ_DIR$\my ku\src\GPIO.h</file>
+      <file>$PROJ_DIR$\my ku\src\GPIO.c</file>
+      <file>$PROJ_DIR$\my ku\src\I2C.c</file>
+      <file>$PROJ_DIR$\my ku\src\I2C.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\camera_7670.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\camera.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SD.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPI.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\INT.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_moni.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\project.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\MS5611.o</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.h</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\dmpmap.h</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.h</file>
+      <file>$PROJ_DIR$\my ku\lib\HMC5883.h</file>
+      <file>$PROJ_DIR$\my ku\lib\HMC5883.c</file>
+      <file>$PROJ_DIR$\my ku\lib\MPU6050.c</file>
+      <file>$PROJ_DIR$\my ku\lib\MPU6050.h</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\dmpKey.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\SCCB.pbi</file>
       <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
       <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
       <file>$PROJ_DIR$\Debug\Obj\LCD.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\SCCB.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\MPU6050.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\common.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\WDOG.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\I2C.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\GPIO.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\my ku\project\camera.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ADC.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Fuzzy.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\MPU6050.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\inv_mpu_dmp_motion_driver.o</file>
       <file>$PROJ_DIR$\Debug\Obj\project.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\inv_mpu.o</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$PROJ_DIR$\my ku\project\Fuzzy.c</file>
       <file>$PROJ_DIR$\Debug\Obj\inv_mpu_dmp_motion_driver.pbi</file>
-      <file>$PROJ_DIR$\my ku\src\INT.c</file>
-      <file>$PROJ_DIR$\my ku\src\INT.h</file>
-      <file>$PROJ_DIR$\my ku\src\LCD.h</file>
-      <file>$PROJ_DIR$\my ku\src\LCD.c</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\SD.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\UART.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PID.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\DMA.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_MK60F15.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\TFT.o</file>
+      <file>$PROJ_DIR$\my ku\project\LCD.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\TFT.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPIO.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Fuzzy.pbi</file>
+      <file>$TOOLKIT_DIR$\config\linker\Freescale\MK60xX512_15.icf</file>
+      <file>$PROJ_DIR$\my ku\project\Fuzzy.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C.pbi</file>
+      <file>$PROJ_DIR$\my ku\project\PID.c</file>
+      <file>$PROJ_DIR$\my ku\project\SCCB.c</file>
+      <file>$PROJ_DIR$\my ku\project\PID.h</file>
+      <file>$PROJ_DIR$\my ku\project\project.c</file>
+      <file>$PROJ_DIR$\my ku\project\project.h</file>
       <file>$PROJ_DIR$\my ku\project\SCCB.h</file>
       <file>$PROJ_DIR$\my ku\project\TFT.c</file>
       <file>$PROJ_DIR$\my ku\project\TFT.h</file>
-      <file>$PROJ_DIR$\system_MK60F15.c</file>
-      <file>$PROJ_DIR$\startup_MK60F15.s</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\my ku\src\SPI.h</file>
+      <file>$PROJ_DIR$\my ku\src\LCD.h</file>
+      <file>$PROJ_DIR$\my ku\src\PIT.h</file>
+      <file>$PROJ_DIR$\my ku\src\PIT.c</file>
+      <file>$PROJ_DIR$\my ku\src\SD.c</file>
+      <file>$PROJ_DIR$\my ku\src\SD.h</file>
       <file>$PROJ_DIR$\my ku\src\SPI.c</file>
+      <file>$PROJ_DIR$\my ku\src\SPI.h</file>
       <file>$PROJ_DIR$\my ku\src\systick.h</file>
       <file>$PROJ_DIR$\my ku\src\systick.c</file>
       <file>$PROJ_DIR$\my ku\src\UART.h</file>
       <file>$PROJ_DIR$\my ku\src\UART.c</file>
       <file>$PROJ_DIR$\my ku\src\WDOG.h</file>
-      <file>$PROJ_DIR$\my ku\project\camera_7670.c</file>
       <file>$PROJ_DIR$\my ku\src\WDOG.c</file>
+      <file>$PROJ_DIR$\my ku\project\camera_7670.c</file>
       <file>$PROJ_DIR$\my ku\project\camera_7670.h</file>
-      <file>$PROJ_DIR$\my ku\project\PID.c</file>
-      <file>$PROJ_DIR$\my ku\project\SCCB.c</file>
-      <file>$PROJ_DIR$\my ku\project\PID.h</file>
-      <file>$PROJ_DIR$\my ku\project\project.h</file>
-      <file>$PROJ_DIR$\my ku\project\project.c</file>
-      <file>$PROJ_DIR$\my ku\src\GPIO.h</file>
-      <file>$PROJ_DIR$\my ku\src\I2C.c</file>
-      <file>$PROJ_DIR$\my ku\src\I2C_moni.h</file>
-      <file>$PROJ_DIR$\my ku\src\I2C.h</file>
-      <file>$PROJ_DIR$\my ku\src\I2C_moni.c</file>
-      <file>$PROJ_DIR$\my ku\src\FTM.h</file>
-      <file>$PROJ_DIR$\my ku\src\GPIO.c</file>
-      <file>$PROJ_DIR$\my ku\src\SD.h</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.h</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.h</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\dmpmap.h</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\dmpKey.h</file>
-      <file>$PROJ_DIR$\my ku\lib\HMC5883.h</file>
-      <file>$PROJ_DIR$\my ku\lib\HMC5883.c</file>
-      <file>$PROJ_DIR$\my ku\lib\MS5611.h</file>
-      <file>$PROJ_DIR$\my ku\src\ADC.h</file>
-      <file>$PROJ_DIR$\my ku\src\ADC.c</file>
-      <file>$PROJ_DIR$\my ku\src\all.h</file>
-      <file>$PROJ_DIR$\my ku\lib\MPU6050.c</file>
-      <file>$PROJ_DIR$\my ku\lib\MPU6050.h</file>
-      <file>$PROJ_DIR$\my ku\lib\MS5611.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\DMA.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\MS5611.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\systick.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\PIT.o</file>
-      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\FTM.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\DAC.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\WDOG.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\WDOG.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\inv_mpu.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\GPIO.o</file>
       <file>$PROJ_DIR$\Debug\Obj\startup_MK60F15.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\UART.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$TOOLKIT_DIR$\config\linker\Freescale\MK60xX512_15.icf</file>
-      <file>$PROJ_DIR$\Debug\Obj\TFT.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\SD.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\PID.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\DMA.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\TFT.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\system_MK60F15.o</file>
-      <file>$PROJ_DIR$\my ku\project\LCD.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\LCD.pbi</file>
-      <file>$PROJ_DIR$\my ku\project\camera.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\DAC.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\I2C_moni.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\HMC5883.pbi</file>
-      <file>$PROJ_DIR$\MK60F15.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\MPU6050.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\SPI.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ADC.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Fuzzy.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\GPIO.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Fuzzy.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\FTM.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\WDOG.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\DAC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SCCB.o</file>
       <file>$PROJ_DIR$\Debug\Obj\UART.pbi</file>
       <file>$PROJ_DIR$\Debug\Exe\test.out</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\HMC5883.o</file>
       <file>$PROJ_DIR$\Debug\Obj\PID.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\SCCB.o</file>
       <file>$PROJ_DIR$\Debug\Obj\ADC.o</file>
       <file>$PROJ_DIR$\Debug\Obj\system_MK60F15.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\FTM.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\HMC5883.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\camera_7670.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\SD.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\inv_mpu_dmp_motion_driver.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\SPI.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\camera.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\PIT.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\camera_7670.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tlv.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\test.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\common.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\MPU6050.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\camera.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\DMA.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\INT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\MS5611.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\PIT.o</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\system_MK60F15.c</file>
+      <file>$PROJ_DIR$\startup_MK60F15.s</file>
       <file>$PROJ_DIR$\my ku\project\Fuzzy.h</file>
       <file>$PROJ_DIR$\Debug\Obj\inv_mpu.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\camera.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\INT.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\I2C_moni.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\I2C.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\MS5611.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\common.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\project.o</file>
+      <file>$PROJ_DIR$\my ku\project\camera.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\DAC.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\LCD.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPI.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\HMC5883.pbi</file>
+      <file>$PROJ_DIR$\MK60F15.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\I2C_moni.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tlv.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\test.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\camera_7670.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\my ku\src\PIT.c</name>
+      <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
-          <file> 84</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 135</file>
+          <name>ILINK</name>
+          <file> 113</file>
         </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\SD.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 131</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 97</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\common.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 147</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 18</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\DAC.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 105</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 87</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\DMA.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 99</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\FTM.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 86</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 127</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\Fuzzy.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 116</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 119</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\INT.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 139</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 143</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\LCD.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 15</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 103</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\TFT.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 95</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 100</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\system_MK60F15.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 101</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 126</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 24 80 13 93 14 96 92 112 109</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\startup_MK60F15.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 90</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 114</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 19</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\SPI.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 133</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 111</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\systick.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 82</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 83</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\UART.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 91</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 120</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\camera_7670.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 130</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 136</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\WDOG.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 89</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 20</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\PID.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 123</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 98</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\SCCB.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 124</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 16</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 4 35 56 43</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\project.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 148</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 25</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\I2C.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 145</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 21</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\my ku\src\I2C_moni.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 106</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 144</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\GPIO.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 22</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 117</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 27</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 141</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 11 80 13 93 14 96 92 112 118 115 24 12 129 88 122 23 107 67 4 75 109 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 132</file>
+          <file> 142</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -636,26 +180,64 @@
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 11 80 13 93 14 96 92 112 118 115 24 12 129 88 122 23 107 67 4 66 69 68 75 109 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\lib\HMC5883.c</name>
+      <name>$PROJ_DIR$\my ku\src\INT.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 128</file>
+          <file> 124</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 108</file>
+          <file> 29</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37 122 23 107</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\LCD.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\MS5611.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
         </tool>
       </inputs>
     </file>
@@ -664,26 +246,45 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 125</file>
+          <file> 116</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 113</file>
+          <file> 51</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\lib\MPU6050.c</name>
+      <name>$PROJ_DIR$\my ku\src\common.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 17</file>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\DAC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 137</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -693,249 +294,149 @@
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37 122 23 107 67 66</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\lib\MS5611.c</name>
+      <name>$PROJ_DIR$\my ku\src\DMA.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 146</file>
+          <file> 65</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 81</file>
+          <file> 123</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 50 37</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 121</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\LCD.c</name>
+      <name>$PROJ_DIR$\my ku\src\FTM.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 15</file>
+          <file> 107</file>
         </tool>
         <tool>
           <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\GPIO.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\I2C.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47 127 46 71 49 60 61 143 70 52 100 45 148 106 109 102 146 34 11 37 42 35 9 141 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
           <file> 103</file>
         </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47 127 46 71 49 60 61 143 70 52 100 45 148 106 109 102 146 34 11 9 141 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\project\camera.c</name>
+      <name>$PROJ_DIR$\my ku\lib\HMC5883.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 134</file>
+          <file> 114</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 142</file>
+          <file> 140</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 75 109 24 80 13 93 14 96 92 112 4 73 56 32 2 43 45 6 47 59 61 9 33 77 72 70 54 53 41 140 35 10 37</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84 109 102 146</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Debug\Exe\test.out</name>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 94 125 130 147 105 99 86 22 128 145 106 139 27 132 15 114 17 146 123 84 148 124 131 133 90 101 82 95 91 89 26 28 137 85</file>
-        </tool>
-      </inputs>
-    </file>
-  </configuration>
-  <configuration>
-    <name>Release</name>
-    <outputs>
-      <file>$PROJ_DIR$\my ku\src\PIT.c</file>
-      <file>$PROJ_DIR$\my ku\src\SD.c</file>
-      <file>$PROJ_DIR$\my ku\src\common.c</file>
-      <file>$PROJ_DIR$\my ku\src\DAC.c</file>
-      <file>$PROJ_DIR$\my ku\src\DMA.c</file>
-      <file>$PROJ_DIR$\my ku\src\FTM.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$PROJ_DIR$\my ku\src\INT.c</file>
-      <file>$PROJ_DIR$\my ku\src\LCD.c</file>
-      <file>$PROJ_DIR$\my ku\project\TFT.c</file>
-      <file>$PROJ_DIR$\system_MK60F15.c</file>
-      <file>$PROJ_DIR$\startup_MK60F15.s</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\my ku\src\SPI.c</file>
-      <file>$PROJ_DIR$\my ku\src\systick.c</file>
-      <file>$PROJ_DIR$\my ku\src\UART.c</file>
-      <file>$PROJ_DIR$\my ku\project\camera_7670.c</file>
-      <file>$PROJ_DIR$\my ku\src\WDOG.c</file>
-      <file>$PROJ_DIR$\my ku\project\PID.c</file>
-      <file>$PROJ_DIR$\my ku\project\SCCB.c</file>
-      <file>$PROJ_DIR$\my ku\project\project.c</file>
-      <file>$PROJ_DIR$\my ku\src\I2C.c</file>
-      <file>$PROJ_DIR$\my ku\src\I2C_moni.c</file>
-      <file>$PROJ_DIR$\my ku\src\GPIO.c</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</file>
-      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.h</file>
-      <file>$PROJ_DIR$\my ku\lib\HMC5883.c</file>
-      <file>$PROJ_DIR$\my ku\src\ADC.c</file>
-      <file>$PROJ_DIR$\my ku\src\all.h</file>
-      <file>$PROJ_DIR$\my ku\lib\MPU6050.c</file>
-      <file>$PROJ_DIR$\my ku\lib\MS5611.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$PROJ_DIR$\MK60F15.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\Release\Obj\systick.o</file>
-      <file>$PROJ_DIR$\Release\Obj\GPIO.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\FTM.o</file>
-      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\UART.o</file>
-      <file>$PROJ_DIR$\Release\Obj\DAC.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\project.o</file>
-      <file>$PROJ_DIR$\Release\Obj\WDOG.o</file>
-      <file>$PROJ_DIR$\Release\Obj\inv_mpu_dmp_motion_driver.o</file>
-      <file>$PROJ_DIR$\Release\Obj\startup_MK60F15.o</file>
-      <file>$PROJ_DIR$\Release\Obj\PID.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\common.o</file>
-      <file>$PROJ_DIR$\Release\Obj\systick.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\MPU6050.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\main.o</file>
-      <file>$PROJ_DIR$\Release\Obj\TFT.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\HMC5883.o</file>
-      <file>$PROJ_DIR$\Release\Obj\DAC.o</file>
-      <file>$PROJ_DIR$\Release\Obj\project.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\DMA.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\MPU6050.o</file>
-      <file>$PROJ_DIR$\Release\Obj\system_MK60F15.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\WDOG.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\inv_mpu_dmp_motion_driver.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\I2C.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\SPI.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\system_MK60F15.o</file>
-      <file>$PROJ_DIR$\Release\Obj\GPIO.o</file>
-      <file>$PROJ_DIR$\Release\Obj\MS5611.o</file>
-      <file>$PROJ_DIR$\Release\Exe\test.out</file>
-      <file>$PROJ_DIR$\Release\Obj\ADC.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\camera_7670.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\HMC5883.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\inv_mpu.o</file>
-      <file>$PROJ_DIR$\Release\Obj\inv_mpu.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\TFT.o</file>
-      <file>$PROJ_DIR$\Release\Obj\PID.o</file>
-      <file>$PROJ_DIR$\Release\Obj\ADC.o</file>
-      <file>$PROJ_DIR$\Release\Obj\LCD.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\FTM.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\common.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\I2C_moni.o</file>
-      <file>$PROJ_DIR$\Release\Obj\INT.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\SD.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\LCD.o</file>
-      <file>$PROJ_DIR$\Release\Obj\I2C_moni.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\DMA.o</file>
-      <file>$PROJ_DIR$\Release\Obj\SCCB.o</file>
-      <file>$PROJ_DIR$\Release\Obj\PIT.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\PIT.o</file>
-      <file>$PROJ_DIR$\Release\Obj\MS5611.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\INT.o</file>
-      <file>$PROJ_DIR$\Release\Obj\SCCB.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\UART.pbi</file>
-      <file>$PROJ_DIR$\Release\Obj\camera_7670.o</file>
-      <file>$PROJ_DIR$\Release\Obj\I2C.o</file>
-      <file>$PROJ_DIR$\Release\Obj\SPI.o</file>
-    </outputs>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\PIT.c</name>
+      <name>$PROJ_DIR$\my ku\lib\MPU6050.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 98</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 97</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\SD.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 92</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\common.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 60</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 89</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\DAC.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 66</file>
+          <file> 120</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -945,45 +446,462 @@
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84 109 102 146 34 37</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\src\DMA.c</name>
+      <name>$PROJ_DIR$\my ku\project\LCD.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 95</file>
+          <file> 48</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 68</file>
+          <file> 138</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\Fuzzy.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\src\FTM.c</name>
+      <name>$PROJ_DIR$\my ku\project\PID.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 51</file>
+          <file> 115</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 88</file>
+          <file> 64</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\SCCB.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11 82 18 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\project.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\TFT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\PIT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 130</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\SD.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\SPI.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 129</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\UART.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\WDOG.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\camera_7670.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 147</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\test.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 74 116 147 28 137 65 107 104 114 27 142 124 103 55 48 43 120 32 115 130 31 111 25 26 105 66 129 67 63 108 59 58 144 128</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 99 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\system_MK60F15.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 100 127 46 71 49 60 61 143 141</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_MK60F15.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\camera.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 141 100 127 46 71 49 60 61 143 11 8 18 4 86 92 94 13 96 21 17 14 85 41 5 38 81 79 91 134 82 50 84</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\my ku\src\I2C_moni.c</file>
+      <file>$PROJ_DIR$\Release\Obj\TFT.pbi</file>
+      <file>$PROJ_DIR$\my ku\src\INT.c</file>
+      <file>$PROJ_DIR$\my ku\src\LCD.c</file>
+      <file>$PROJ_DIR$\Release\Obj\common.o</file>
+      <file>$PROJ_DIR$\my ku\lib\MS5611.c</file>
+      <file>$PROJ_DIR$\my ku\src\ADC.c</file>
+      <file>$PROJ_DIR$\Release\Obj\MPU6050.o</file>
+      <file>$PROJ_DIR$\my ku\src\all.h</file>
+      <file>$PROJ_DIR$\Release\Obj\system_MK60F15.pbi</file>
+      <file>$PROJ_DIR$\my ku\src\common.c</file>
+      <file>$PROJ_DIR$\Release\Obj\I2C.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\SPI.pbi</file>
+      <file>$PROJ_DIR$\my ku\src\DAC.c</file>
+      <file>$PROJ_DIR$\Release\Obj\SCCB.o</file>
+      <file>$PROJ_DIR$\Release\Obj\DMA.o</file>
+      <file>$PROJ_DIR$\my ku\src\DMA.c</file>
+      <file>$PROJ_DIR$\my ku\src\FTM.c</file>
+      <file>$PROJ_DIR$\Release\Obj\PIT.pbi</file>
+      <file>$PROJ_DIR$\my ku\src\GPIO.c</file>
+      <file>$PROJ_DIR$\my ku\src\I2C.c</file>
+      <file>$PROJ_DIR$\Release\Obj\MPU6050.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\systick.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\system_MK60F15.o</file>
+      <file>$PROJ_DIR$\Release\Exe\test.out</file>
+      <file>$PROJ_DIR$\Release\Obj\MS5611.o</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.h</file>
+      <file>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</file>
+      <file>$PROJ_DIR$\my ku\lib\HMC5883.c</file>
+      <file>$PROJ_DIR$\my ku\lib\MPU6050.c</file>
+      <file>$PROJ_DIR$\Release\Obj\main.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Release\Obj\WDOG.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\inv_mpu_dmp_motion_driver.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\DMA.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\DAC.o</file>
+      <file>$PROJ_DIR$\Release\Obj\project.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\HMC5883.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\my ku\project\PID.c</file>
+      <file>$PROJ_DIR$\my ku\project\SCCB.c</file>
+      <file>$PROJ_DIR$\my ku\project\project.c</file>
+      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\my ku\project\TFT.c</file>
+      <file>$PROJ_DIR$\Release\Obj\UART.o</file>
+      <file>$PROJ_DIR$\my ku\src\PIT.c</file>
+      <file>$PROJ_DIR$\my ku\src\SD.c</file>
+      <file>$PROJ_DIR$\my ku\src\SPI.c</file>
+      <file>$PROJ_DIR$\Release\Obj\DAC.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\startup_MK60F15.o</file>
+      <file>$PROJ_DIR$\Release\Obj\inv_mpu_dmp_motion_driver.o</file>
+      <file>$PROJ_DIR$\my ku\src\systick.c</file>
+      <file>$PROJ_DIR$\Release\Obj\WDOG.o</file>
+      <file>$PROJ_DIR$\my ku\src\UART.c</file>
+      <file>$PROJ_DIR$\Release\Obj\systick.o</file>
+      <file>$PROJ_DIR$\my ku\src\WDOG.c</file>
+      <file>$PROJ_DIR$\my ku\project\camera_7670.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Release\Obj\project.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Release\Obj\PID.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\FTM.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\system_MK60F15.c</file>
+      <file>$PROJ_DIR$\startup_MK60F15.s</file>
+      <file>$PROJ_DIR$\MK60F15.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Release\Obj\I2C_moni.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\common.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\FTM.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\LCD.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\LCD.o</file>
+      <file>$PROJ_DIR$\Release\Obj\SD.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\INT.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\GPIO.o</file>
+      <file>$PROJ_DIR$\Release\Obj\ADC.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\inv_mpu.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\ADC.o</file>
+      <file>$PROJ_DIR$\Release\Obj\camera_7670.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\TFT.o</file>
+      <file>$PROJ_DIR$\Release\Obj\inv_mpu.o</file>
+      <file>$PROJ_DIR$\Release\Obj\HMC5883.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\GPIO.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\PID.o</file>
+      <file>$PROJ_DIR$\Release\Obj\I2C_moni.o</file>
+      <file>$PROJ_DIR$\Release\Obj\camera_7670.o</file>
+      <file>$PROJ_DIR$\Release\Obj\MS5611.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\PIT.o</file>
+      <file>$PROJ_DIR$\Release\Obj\INT.o</file>
+      <file>$PROJ_DIR$\Release\Obj\SCCB.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\I2C.o</file>
+      <file>$PROJ_DIR$\Release\Obj\UART.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\SPI.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\I2C_moni.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
         </tool>
       </inputs>
     </file>
@@ -996,13 +914,13 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 91</file>
+          <file> 85</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 8</file>
         </tool>
       </inputs>
     </file>
@@ -1011,7 +929,39 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 93</file>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\MS5611.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\ADC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 89</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -1021,163 +971,198 @@
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 8</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\project\TFT.c</name>
+      <name>$PROJ_DIR$\my ku\src\common.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 84</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 64</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\system_MK60F15.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 75</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 70</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 11 37 8 40 9 41 39 44 43</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\startup_MK60F15.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 58</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 63</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 52</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\SPI.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 105</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 74</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\systick.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 49</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 61</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\UART.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 53</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 102</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\project\camera_7670.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 103</file>
+          <file> 4</file>
         </tool>
         <tool>
           <name>BICOMP</name>
           <file> 80</file>
         </tool>
       </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\src\WDOG.c</name>
+      <name>$PROJ_DIR$\my ku\src\DAC.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 56</file>
+          <file> 40</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 71</file>
+          <file> 56</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 8</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\DMA.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\FTM.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\GPIO.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 94</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\I2C.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34 72 33 46 35 43 44 77 45 36 65 32 105 68 69 66 78 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34 72 33 46 35 43 44 77 45 36 65 32 105 68 69 66 78 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\HMC5883.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\lib\MPU6050.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>$PROJ_DIR$\my ku\project\PID.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 85</file>
+          <file> 95</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 59</file>
+          <file> 70</file>
         </tool>
       </outputs>
     </file>
@@ -1186,7 +1171,7 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 96</file>
+          <file> 14</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -1199,16 +1184,63 @@
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 55</file>
+          <file> 67</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 67</file>
+          <file> 41</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\src\I2C.c</name>
+      <name>$PROJ_DIR$\my ku\project\TFT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\PIT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\SD.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\SPI.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
@@ -1216,156 +1248,124 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 73</file>
+          <file> 12</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 8</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\src\I2C_moni.c</name>
+      <name>$PROJ_DIR$\my ku\src\systick.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 90</file>
+          <file> 62</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 94</file>
+          <file> 22</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 34</file>
+          <file> 8</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\src\GPIO.c</name>
+      <name>$PROJ_DIR$\my ku\src\UART.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 76</file>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\src\WDOG.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\my ku\project\camera_7670.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
         </tool>
         <tool>
           <name>BICOMP</name>
           <file> 50</file>
         </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu.c</name>
+      <name>$PROJ_DIR$\system_MK60F15.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 82</file>
+          <file> 23</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 83</file>
+          <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICCARM</name>
-          <file> 6 37 8 40 9 41 39 44 46 45 11 7 48 38 47 10 42 31</file>
+          <file> 65 72 33 46 35 43 44 77 76</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\my ku\lib\dmp\inv_mpu_dmp_motion_driver.c</name>
+      <name>$PROJ_DIR$\startup_MK60F15.s</name>
       <outputs>
         <tool>
-          <name>ICCARM</name>
+          <name>AARM</name>
           <file> 57</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 72</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 6 37 8 40 9 41 39 44 46 45 11 7 48 38 47 10 42 31</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\lib\HMC5883.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 65</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 81</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\src\ADC.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 86</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 79</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 34</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\lib\MPU6050.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 69</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 62</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\my ku\lib\MS5611.c</name>
-      <outputs>
-        <tool>
-          <name>ICCARM</name>
-          <file> 77</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 99</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 78</file>
         </tool>
       </outputs>
     </file>
