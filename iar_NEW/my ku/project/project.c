@@ -25,13 +25,13 @@ void motor_PWM_init()
      GPIO_INIT(PORTA,8,OUTPUT);
      GPIO_INIT(PORTA,9,OUTPUT);
      GPIO_SET(PORTA,6,1);
-     GPIO_SET(PORTA,7,0);
+     GPIO_SET(PORTA,9,0);
      GPIO_SET(PORTA,8,1);
-     FTM_PWM_Init(EPWM_MODE, FTM1_CH1_PTA9, 50, 0.1);
+     FTM_PWM_Init(EPWM_MODE, FTM0_CH4_PTA7, 50, 0);
  }
 void motor_dutyset(float pwm1_duty)
  {
-      FTM_PWM_Set_Duty(FTM1,FTM_CH1,pwm1_duty/100);
+      FTM_PWM_Set_Duty(FTM0,FTM_CH4,pwm1_duty/100);
  }
 void servo_driver_init()
  {
@@ -39,7 +39,7 @@ void servo_driver_init()
  }
 void servo_set(float duty)
  {
-     FTM_PWM_Set_Duty(FTM2, FTM_CH0,(duty/100));
+     FTM_PWM_Set_Duty(FTM2, FTM_CH0,((15-duty)/100));
  }
 void translate_uart(short acc)
  {
