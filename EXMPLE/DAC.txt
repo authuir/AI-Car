@@ -1,9 +1,0 @@
-#include "all.h"
-
-void main(void)
- {
-      SYS_CLOCK_SET(SYS_CLOCK_150M,1,2,3,6);
-     DAC_INIT(DAC1);
-          DAC_OUT(DAC1,1500);
-          while(1);
- }

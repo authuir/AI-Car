@@ -169,15 +169,6 @@ Fmt41={W}0:times	3	0
 Fmt42={W}0:tmp2	4	0
 Fmt43={W}0:value	3	0
 Fmt44={W}0:x	3	0
-[Trace1]
-Enabled=0
-ShowSource=1
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 0 "EMUL_CODE" "0x00000D06" 0 0 1 "" 0 "" 0
-Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\my ku\project\project.c}.1.1" 0 0 1 "" 0 "" 0
-Count=2
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -185,14 +176,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Aliases]
-A0=_ "C:\Users\love  ben\Desktop\iar\main.c" ""
-A1=_ "C:\Users\love  ben\Desktop\iar\startup_MK60F15.s" ""
-A2=_ "C:\Users\love  ben\Desktop\智能车_K60\iar\my ku\project\SCCB.c" ""
-A3=_ "C:\Users\love  ben\Desktop\智能车_K60\iar\my ku\src\INT.c" ""
-A4=_ "C:\Users\love  ben\Desktop\智能车_K60\iar\my ku\src\SPI.c" ""
-Count=5
-SuppressDialog=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -201,3 +184,17 @@ Mode=1
 Graph=0
 Symbiont=0
 Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "0x00000D06" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\my ku\project\project.c}.1.1" 0 0 1 "" 0 "" 0
+Count=2
+[Aliases]
+A0=_ "C:\Users\love  ben\Desktop\iar\main.c" ""
+A1=_ "C:\Users\love  ben\Desktop\iar\startup_MK60F15.s" ""
+A2=_ "C:\Users\love  ben\Desktop\智能车_K60\iar\my ku\project\SCCB.c" ""
+A3=_ "C:\Users\love  ben\Desktop\智能车_K60\iar\my ku\src\INT.c" ""
+A4=_ "C:\Users\love  ben\Desktop\智能车_K60\iar\my ku\src\SPI.c" ""
+Count=5
+SuppressDialog=1

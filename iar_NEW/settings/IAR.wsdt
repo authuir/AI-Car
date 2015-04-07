@@ -12,7 +12,7 @@
           
           
           
-        <Column0>126</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>125</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       <PreferedWindows><Position>0</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Workspace>
       <Build>
         
@@ -29,13 +29,13 @@
     <Windows>
       
       
-    <Wnd0>
+    <Wnd2>
         <Tabs>
           
           
         <Tab><Identity>TabID-20135-29018</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-11363-29146</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-26155-20850</Identity><TabName>Ambiguous Definitions</TabName><Factory>Select-Ambiguous-Definitions</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd0><Wnd1><Tabs><Tab><Identity>TabID-20648-25605</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>test</ExpandedNode><ExpandedNode>test/my ku</ExpandedNode><ExpandedNode>test/my ku/inc</ExpandedNode><ExpandedNode>test/projiect</ExpandedNode><ExpandedNode>test/user</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1></Windows>
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-20648-25605</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>test</ExpandedNode><ExpandedNode>test/my ku</ExpandedNode><ExpandedNode>test/my ku/inc</ExpandedNode><ExpandedNode>test/projiect</ExpandedNode><ExpandedNode>test/user</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
     <Editor>
       
       
@@ -48,7 +48,7 @@
       
       
       
-    <Top><Row0><Sizes><Toolbar-0663D3F0><key>iaridepm.enu1</key></Toolbar-0663D3F0></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>467</Bottom><Right>218</Right><x>-2</x><y>-2</y><xscreen>290</xscreen><yscreen>293</yscreen><sizeHorzCX>212299</sizeHorzCX><sizeHorzCY>427737</sizeHorzCY><sizeVertCX>161054</sizeVertCX><sizeVertCY>680292</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>173</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>175</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>255474</sizeHorzCY><sizeVertCX>1290630</sizeVertCX><sizeVertCY>2145985</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-032CFDF0><key>iaridepm.enu1</key></Toolbar-032CFDF0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>421</Bottom><Right>199</Right><x>-2</x><y>-2</y><xscreen>265</xscreen><yscreen>266</yscreen><sizeHorzCX>212170</sizeHorzCX><sizeHorzCY>426966</sizeHorzCY><sizeVertCX>160929</sizeVertCX><sizeVertCY>678973</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>157</Bottom><Right>1251</Right><x>-2</x><y>-2</y><xscreen>1253</xscreen><yscreen>159</yscreen><sizeHorzCX>1003203</sizeHorzCX><sizeHorzCY>255217</sizeHorzCY><sizeVertCX>1290633</sizeVertCX><sizeVertCY>2146067</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 
