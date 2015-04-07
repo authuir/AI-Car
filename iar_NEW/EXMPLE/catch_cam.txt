@@ -1,0 +1,264 @@
+#if     1           //边缘扫描算法
+                   scan_mode=0;left_dot=0;right_dot=0;
+                   scan_mode=0;//0表示行扫描，1表示列扫描
+                    hang_dir=0;lie_dir=0;
+					left_flag=0,right_flag=0;
+                   for(i=start;!(((left_flag==1)&&(right_flag==1))&&(i>=end));i++)   //先扫前几行
+                    {
+                        left=0;right=Y_MAX;
+                        for(j=Y_MAX/2;j>3;j--)
+                         {
+                             if((date[i][j+1]>date[i][j])&&(date[i][j+2]>date[i][j-1]))
+                              {
+                                  left=j;
+								  left_flag=1;
+                                  break;
+                              }
+							 left_flag=0;
+                         }
+                        left_line[left_dot][0]=i;left_line[left_dot][1]=left;left_dot++;
+                        for(j=Y_MAX/2;j<Y_MAX-3;j++)
+                         {
+                             if((date[i][j-1]>date[i][j])&&(date[i][j-2]>date[i][j+1]))
+                              {
+                                  right=j;
+								  right_flag=1;
+                                  break;
+                              }
+							 right_flag=0;
+                         }
+                        right_line[right_dot][0]=i;right_line[right_dot][1]=right;right_dot++;
+                    }
+                   //先扫左边的一条线
+                   ones_ok=0;error_times=0;
+                   for(i;(i>2)&&(i<X_MAX-2)&&(j>2)&&(j<Y_MAX-2);)
+                    {
+                        if(scan_mode==0)//如果现在是行扫描
+                         {
+                             root1=left_line[left_dot-1][1];
+                             if(root1<scale) left_start=2;
+                             else left_start=root1-scale;
+                             if(root1+scale>Y_MAX-2)  left_end=Y_MAX-2;
+                             else left_end=root1+scale;
+                             for(j=left_end;j>=left_start;j--)
+                              {
+                                  if((date[i][j+1]>date[i][j])&&(date[i][j+2]>date[i][j-1]))
+                                   {
+                                       left=j;
+                                       left_flag=1;//表示采集到左边缘
+                                       left_line[left_dot][0]=i;left_line[left_dot][1]=left;left_dot++;
+                                       break;
+                                   }
+                                  left_flag=0;
+                              }
+                             if(left_flag==0)//v如果没有搜到，就看下一行是不是全为黑或者全白
+                              {
+                                  j=(left_end+left_start)/2;
+                                  if((left_line[left_dot-1][1]-left_line[left_dot-6][1]>0)&&(left_line[left_dot-2][1]-left_line[left_dot-7][1]>0))
+                                      lie_dir=1;//若连续两个都比前面大，说明在往列增大的地方偏
+                                  else lie_dir=0;
+
+							
+                            if(!ones_ok)
+                                {
+							for(k=i;k<X_MAX-2;k+=2)
+							 {
+								 for(left_10_j=0;left_10_j<Y_MAX;left_10_j+=3)
+								 {
+									 if(date[k][left_10_j]!=254)
+									 {
+										 t=0;
+										 break;
+									 }
+									 t=1;
+								 }
+                                 if(t==1) break;
+								 
+							 }//t=1表示遇到十字
+                                   }
+							if((t)&&(!ones_ok))//如果遇到十字
+							{
+								for(k;(k!=5)&&(k<X_MAX-2);k+=5)
+								{
+									left_10_j=2;
+									for(left_10_j;left_10_j<Y_MAX/2;left_10_j+=1)
+									{
+										if((date[k][left_10_j+2]>date[k][left_10_j-2])&&(date[k][left_10_j+1]>date[k][left_10_j-1]))
+										  {
+											  left_10[1]=left_10_j;
+											  left_10[0]=k;
+											  k=0;
+											  break;
+										  }
+									}
+								}
+								dot_sub=(left_10[0]-left_line[left_dot-3][0])/(left_10[1]-left_line[left_dot-3][1]);
+								for(i;i<left_10[0];i++)
+								{
+								    left_line[left_dot][0]=i;
+									if((left_10[0]-i)%dot_sub==0)
+										left_line[left_dot][1]=left_line[left_dot-1][1]+1;
+									else left_line[left_dot][1]=left_line[left_dot-1][1];
+									left_dot++;
+								}
+								t=0;ones_ok=1;
+							}
+                            else  if((!t)&&((date[i+1][j-1]==date[i+1][j])&&(date[i+1][j]==date[i+1][j+1])&&(date[i+1][j]==1)&&(lie_dir))||((date[i+1][j-1]==date[i+1][j])&&(date[i+1][j]==date[i+1][j+1])&&(date[i+1][j]==254)&&(lie_dir==0)))//表示都是黑点或者白点
+                                   {
+                                       left_flag=0;
+                                       scan_mode=1;
+                                       i--;
+                                   }
+                                 //else  while(1);//否则先死在这,表示后面 不只是黑点，不应该是转换地点，可能是十字//待写
+                              }
+                             i++;
+                         }
+                        else 
+                         {
+                             root1=left_line[left_dot-1][0];
+                             if(root1<scale) left_start=2;
+                             else left_start=root1-scale;
+                             if(root1+scale>X_MAX-2)  left_end=X_MAX-2;
+                             else left_end=root1+scale;
+                             if(lie_dir)
+                              {
+                                  for(i=left_start;i<left_end;i++)
+                                   {
+                                       if((date[i-1][j]>date[i][j])&&(date[i-2][j]>date[i+1][j]))
+                                        {
+                                            left=i;
+                                            left_flag=1;//表示采集到左边缘
+											error_times=0;
+                                            left_line[left_dot][0]=left;left_line[left_dot][1]=j;left_dot++;
+                                            break;
+                                        }
+                                       left_flag=0;
+                                   }
+								  if(left_flag=0)
+								  {	
+										left_line[left_dot][0]=left_line[left_dot-1][0]-left_line[left_dot-2][0]+left_line[left_dot-1][0];
+										left_line[left_dot][1]=left_line[left_dot-1][1]-left_line[left_dot-2][1]+left_line[left_dot-1][1];
+										left_dot++;
+								  }
+                                  j++;
+                              }
+                             else 
+                              {
+                                  for(i=left_end;i>left_start;i--)
+                                   {
+                                       if((date[i+1][j]>date[i][j])&&(date[i+2][j]>date[i-1][j]))
+                                        {
+                                            left=i;
+                                            left_flag=1;//表示采集到左边缘
+											error_times=0;
+                                            left_line[left_dot][0]=left;left_line[left_dot][1]=j;left_dot++;
+                                            break;
+                                        }
+                                       left_flag=0;
+                                   }
+								  if(left_flag=0)
+								  {	
+										left_line[left_dot][0]=left_line[left_dot-1][0]-left_line[left_dot-2][0]+left_line[left_dot-1][0];
+										left_line[left_dot][1]=left_line[left_dot-1][1]-left_line[left_dot-2][1]+left_line[left_dot-1][1];
+										left_dot++;
+								  }
+                                  j--;
+                              }
+                         }
+                    }
+                   
+                   //右边的一条线
+                   scan_mode=0;error_times=0;
+                   for(i=end,j=right_line[right_dot-1][1];(i>2)&&(i<X_MAX-2)&&(j>2)&&(j<Y_MAX-2);)
+                    {
+                        if(scan_mode==0)//如果现在是行扫描
+                         {
+                             root2=right_line[right_dot-1][1];
+                             if(root2<scale) right_start=2;
+                             else right_start=root2-scale;
+                             if(root2+scale>Y_MAX-2)  right_end=Y_MAX-2;
+                             else right_end=root2+scale;
+                             for(j=right_start;j<right_end;j++)
+                              {
+                                  if((date[i][j-1]>date[i][j])&&(date[i][j-2]>date[i][j+1]))
+                                   {
+                                       right=j;
+                                       right_flag=1;//表示采集到左边缘
+                                       right_line[right_dot][0]=i;right_line[right_dot][1]=right;right_dot++;
+                                       break;
+                                   }
+                                  right_flag=0;
+                              }
+                             if(right_flag==0)//v如果没有搜到，就看下一行是不是全为黑或者全白
+                              {
+                                  j=(right_end+right_start)/2;
+                                  if((right_line[right_dot-1][1]-right_line[right_dot-6][1]>0)&&(right_line[right_dot-2][1]-right_line[right_dot-7][1]>0))
+                                      lie_dir=1;//若连续两个都比前面大，说明在往列增大的地方偏
+                                  else lie_dir=0;
+                             if(((date[i+1][j-1]==date[i+1][j])&&(date[i][j]==date[i+1][j+1])&&(date[i][j]==254)&&lie_dir)||((date[i+1][j-1]==date[i+1][j])&&(date[i][j]==date[i+1][j+1])&&(date[i][j]==1)&&(lie_dir==0)))//表示都是黑点                                   {
+                                   {
+                                       right_flag=0;
+                                       scan_mode=1;
+                                       i--;
+                                   }
+                                 // else while(1);//否则先死在这,表示后面 不只是黑点，不应该是转换地点，可能是十字//待写
+                              }
+                             i++;
+                         }
+                        else 
+                         {
+                             root2=right_line[right_dot-1][0];
+                             if(root2<scale) right_start=2;
+                             else right_start=root2-scale;
+                             if(root2+scale>X_MAX-2)  right_end=X_MAX-2;
+                             else right_end=root2+scale;
+                             if(lie_dir)
+                              {
+                                  for(i=right_end;i>right_start;i--)
+                                   {
+                                       if((date[i+1][j]>date[i][j])&&(date[i+2][j]>date[i-1][j]))
+                                        {
+                                            right=i;
+                                            right_flag=1;//表示采集到左边缘
+											error_times=0;
+                                            right_line[right_dot][0]=right;right_line[right_dot][1]=j;right_dot++;
+                                            break;
+                                        }
+                                       right_flag=0;
+                                   }
+                                  j++;
+								  if(right_flag==0)
+								  {
+										right_line[right_dot][0]=right_line[right_dot-1][0]-right_line[right_dot-2][0]+right_line[right_dot-1][0];
+										right_line[right_dot][1]=right_line[right_dot-1][1]-right_line[right_dot-2][1]+right_line[right_dot-1][1];
+										right_dot++;error_times++;
+											 if( error_times==3) break;
+								  }
+                              }
+                             else 
+                              {
+                                  for(i=right_start;i<right_end;i++)
+                                   {
+                                       if((date[i-1][j]>date[i][j])&&(date[i-2][j]>date[i+1][j]))
+                                        {
+                                            right=i;
+                                            right_flag=1;//表示采集到左边缘
+											error_times=0;
+                                            right_line[right_dot][0]=right;right_line[right_dot][1]=j;right_dot++;
+                                            break;
+                                        }
+                                       right_flag=0;
+                                   }
+								    if(right_flag==0)
+								  {
+										right_line[right_dot][0]=2*right_line[right_dot-1][0]-right_line[right_dot-2][0];
+										right_line[right_dot][1]=2*right_line[right_dot-1][1]-right_line[right_dot-2][1];
+										right_dot++;
+										error_times++;
+											 if( error_times==3) break;
+								  }
+                                  j--;
+                              }
+                         }
+                    }          
+#endif

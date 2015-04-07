@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>980</ColumnWidth1>
+        <ColumnWidth2>261</ColumnWidth2>
+        <ColumnWidth3>65</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>142</Column0><Column1>14</Column1><Column2>9</Column2><Column3>0</Column3></ColumnWidths>
+      <PreferedWindows><Position>4</Position><ScreenPosX>588</ScreenPosX><ScreenPosY>294</ScreenPosY><Windows/></PreferedWindows></Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory><item>0X400FF050</item><item>0X400FF04C</item><item>0X40048038</item><item>40048038</item></DisasmHistory>
+        
+        
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+    <WATCH_1><expressions><item>date</item><item>value</item><item>i</item><item>xg.a</item><item>xg.a</item><item>add_ave</item><item>read_value</item><item>temp</item><item>line_left</item><item>line_right</item><item>j</item><item>left</item><item>right</item><item>read_date</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>181</item><item>100</item><item>186</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows></WATCH_1><QuickWatch><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>WATCH_1</Factory></Window></Windows></PreferedWindows><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>138</item></col-widths><QWatchHistory><item>duty_pwm</item><item>D1_Pres</item><item>SYS_CLOCK</item><item>Accel_Y_Data</item><item>Accel_X_Data</item><item>value</item><item>fac_ms</item><item>i</item></QWatchHistory></QuickWatch><Select-Ambiguous-Definitions><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Select-Ambiguous-Definitions><Register><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Register></Static>
+    <Windows>
+      
+      
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-10311-17764</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-9789-17774</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2><Tabs><Tab><Identity>TabID-4163-19228</Identity><TabName>Watch 1</TabName><Factory>WATCH_1</Factory></Tab><Tab><Identity>TabID-30094-10476</Identity><TabName>Quick Watch</TabName><Factory>QuickWatch</Factory></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd2><Wnd4><Tabs><Tab><Identity>TabID-16005-29841</Identity><TabName>Disassembly</TabName><Factory>Disassembly</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd4></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\src\FTM.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>471</YPos2><SelStart2>23972</SelStart2><SelEnd2>23972</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\src\DMA.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>69</YPos2><SelStart2>2643</SelStart2><SelEnd2>2643</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\src\all.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>50</SelStart2><SelEnd2>57</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\MK60F15.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>114</YPos2><SelStart2>5634</SelStart2><SelEnd2>5648</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\startup_MK60F15.s</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>323</YPos2><SelStart2>16772</SelStart2><SelEnd2>16772</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\src\UART.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>120</YPos2><SelStart2>5171</SelStart2><SelEnd2>5171</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\src\common.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>1</YPos2><SelStart2>1372</SelStart2><SelEnd2>1372</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\project\SCCB.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>21</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\my ku\project\SCCB.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>144</SelStart2><SelEnd2>144</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>6</YPos2><SelStart2>265</SelStart2><SelEnd2>265</SelEnd2></Tab><ActiveTab>9</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-0696C570><key>iaridepm.enu1</key></Toolbar-0696C570></Sizes></Row0><Row1><Sizes><Toolbar-2D95C7C8><key>armjlink.enu1</key></Toolbar-2D95C7C8></Sizes></Row1><Row2><Sizes><Toolbar-2D95C170><key>debuggergui.enu1</key></Toolbar-2D95C170></Sizes></Row2></Top><Left><Row0><Sizes/></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>516</Bottom><Right>438</Right><x>-2</x><y>-2</y><xscreen>1816</xscreen><yscreen>76</yscreen><sizeHorzCX>1329429</sizeHorzCX><sizeHorzCY>110949</sizeHorzCY><sizeVertCX>322108</sizeVertCX><sizeVertCY>756204</sizeVertCY></Rect></Wnd2></Sizes></Row0><Row1><Sizes><Wnd4><Rect><Top>-2</Top><Left>436</Left><Bottom>516</Bottom><Right>527</Right><x>436</x><y>-2</y><xscreen>1937</xscreen><yscreen>115</yscreen><sizeHorzCX>1418009</sizeHorzCX><sizeHorzCY>167883</sizeHorzCY><sizeVertCX>66618</sizeVertCX><sizeVertCY>756204</sizeVertCY></Rect></Wnd4></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>76</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>78</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>113869</sizeHorzCY><sizeVertCX>1776720</sizeVertCX><sizeVertCY>156204</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

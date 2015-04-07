@@ -1,0 +1,23 @@
+#include "all.h"
+void main()
+ {
+     SYS_CLOCK_SET(SYS_CLOCK_150M,1,2,3,6);
+     GPIO_INIT(PORTA,6,OUTPUT);
+      GPIO_INIT(PORTA,7,OUTPUT);
+     GPIO_INIT(PORTA,8,OUTPUT);
+     GPIO_INIT(PORTA,9,OUTPUT);
+     GPIO_SET(PORTA,6,1);
+     GPIO_SET(PORTA,8,1);
+     GPIO_SET(PORTA,9,0);
+     FTM_PWM_Init(EPWM_MODE, FTM0_CH4_PTA7, 50, 0.1);
+     //servo_driver_init();
+     while(1)
+      {
+          FTM_PWM_Set_Duty(FTM0, FTM_CH4,0.99);
+         // servo_set(0);
+          SYSDelay_ms(500);
+          FTM_PWM_Set_Duty(FTM0, FTM_CH4,0.99);
+          //servo_set(0.5);
+          SYSDelay_ms(500);
+      }
+ }
