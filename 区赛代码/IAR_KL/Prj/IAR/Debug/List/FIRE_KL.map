@@ -1,0 +1,847 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.2.7424/W32 for ARM                 17/Jul/2015  09:40:51
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Exe\FIRE_KL.out
+#    Map file     =  
+#        C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\List\FIRE_KL.map
+#    Command line =  
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\Catch.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\conf.o"
+#        "C:\Users\love
+#        ben\Desktop\1212\IAR_KL\Lib\CMSIS\iar_cortexM0plusl_math.a"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\IR.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\keyboard.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\LCD.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\line_math.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\main.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\misc.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_adc.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_dac.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_dma.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_flash.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_gpio.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_i2c.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_it.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_lptmr.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_mcg.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_PIT.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_port.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_spi.o"
+#        "C:\Users\love
+#        ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_SysTick.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_TPM.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_uart.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\MKL_wdog.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\PID.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\project.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\rollway.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\SCCB.o"
+#        "C:\Users\love
+#        ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\startup_MKL.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\system_MKL.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\TFT.o"
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj\vectors.o" -o
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Exe\FIRE_KL.out"
+#        --map "C:\Users\love
+#        ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\List\FIRE_KL.map" --config
+#        "C:\Users\love ben\Desktop\1212\IAR_KL\Prj\IAR\config
+#        files\256KB_Pflash.icf" --semihosting --entry __iar_program_start
+#        --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x00040000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fffe410 to 0x20006000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address     Size  Object
+  -------              ----        -------     ----  ------
+"A1":                                         0x410
+  .intvec              const    0x00000000    0x410  vectors.o [1]
+                              - 0x00000410    0x410
+
+"P1", part 1 of 2:                              0x0
+  .rodata              const    0x00000410      0x0  zero_init3.o [5]
+  CodeRelocate                  0x00000410      0x0  <Block>
+
+"A2":                                           0x8
+  .noinit              ro code  0x00000410      0x8  startup_MKL.o [1]
+                              - 0x00000418      0x8
+
+"P1", part 2 of 2:                          0x24168
+  .rodata              const    0x00000418   0xaca8  Catch.o [1]
+  .rodata              const    0x0000b0c0   0xaca8  Catch.o [1]
+  .text                ro code  0x00015d68   0x63b0  Catch.o [1]
+  .text                ro code  0x0001c118     0xe0  I32DivModFast.o [5]
+  .text                ro code  0x0001c1f8    0x2b8  MKL_gpio.o [1]
+  .text                ro code  0x0001c4b0    0x708  line_math.o [1]
+  .text                ro code  0x0001cbb8    0x418  rollway.o [1]
+  .text                ro code  0x0001cfd0     0x5c  ABImemcpy.o [5]
+  .text                ro code  0x0001d02c    0x120  FltAddSub.o [4]
+  .text                ro code  0x0001d14c     0xaa  FltDiv.o [4]
+  .text                ro code  0x0001d1f6     0xb4  FltMul.o [4]
+  .text                ro code  0x0001d2aa     0x2a  zero_init3.o [5]
+  .text                ro code  0x0001d2d4     0x28  FltCmpGe.o [4]
+  .text                ro code  0x0001d2fc     0x26  FltCmpLe.o [4]
+  .text                ro code  0x0001d324     0x34  ABImemset.o [5]
+  .text                ro code  0x0001d358     0x36  I32ToFlt.o [4]
+  .text                ro code  0x0001d390     0x3a  FltToS32.o [4]
+  .text                ro code  0x0001d3cc     0x32  FltToDbl.o [4]
+  .text                ro code  0x0001d400     0xa8  atan.o [4]
+  .text                ro code  0x0001d4a8     0x62  DblToFlt.o [4]
+  .text                ro code  0x0001d50c     0x34  I32ToDbl.o [4]
+  .text                ro code  0x0001d540    0x1b4  DblAddSub.o [4]
+  .text                ro code  0x0001d6f4      0xa  sin.o [4]
+  .text                ro code  0x0001d6fe    0x184  DblMul.o [4]
+  .text                ro code  0x0001d884     0x4e  DblToI32.o [4]
+  .text                ro code  0x0001d8d2      0xa  cos.o [4]
+  .text                ro code  0x0001d8dc      0x2  IntDivZer.o [5]
+  .text                ro code  0x0001d8e0     0x50  MKL_port.o [1]
+  .text                ro code  0x0001d930     0x20  FltCmpEq.o [4]
+  .text                ro code  0x0001d950     0x32  DblCmpLe.o [4]
+  .text                ro code  0x0001d982     0x32  DblCmpGe.o [4]
+  .text                ro code  0x0001d9b4     0xc2  DblDiv.o [4]
+  .text                ro code  0x0001da78    0x1e0  xatan.o [4]
+  .text                ro code  0x0001dc58    0x44c  xsin.o [4]
+  .text                ro code  0x0001e0a4     0x10  errno.o [3]
+  .text                ro code  0x0001e0b4    0x174  xquad.o [4]
+  .text                ro code  0x0001e228      0x2  xtls.o [3]
+  .text                ro code  0x0001e22c     0x8c  xdint.o [4]
+  .text                ro code  0x0001e2b8     0x24  DblCmpEq.o [4]
+  .text                ro code  0x0001e2dc     0xc6  fmod.o [4]
+  .text                ro code  0x0001e3a4      0xc  iarEdom.o [5]
+  .text                ro code  0x0001e3b0    0xe0c  keyboard.o [1]
+  .text                ro code  0x0001f1bc     0x84  MKL_SysTick.o [1]
+  .text                ro code  0x0001f240    0x578  LCD.o [1]
+  .text                ro code  0x0001f7b8    0x4e0  project.o [1]
+  .text                ro code  0x0001fc98     0xc8  MKL_PIT.o [1]
+  .text                ro code  0x0001fd60    0x208  IR.o [1]
+  .text                ro code  0x0001ff68      0x4  conf.o [1]
+  .text                ro code  0x0001ff6c    0x4b8  MKL_TPM.o [1]
+  .text                ro code  0x00020424     0xc4  MKL_lptmr.o [1]
+  .text                ro code  0x000204e8    0x8b4  TFT.o [1]
+  .text                ro code  0x00020d9c      0x8  abs.o [3]
+  .text                ro code  0x00020da4     0x26  FltToU32.o [4]
+  .text                ro code  0x00020dcc    0x284  MKL_spi.o [1]
+  .text                ro code  0x00021050    0x660  main.o [1]
+  .text                ro code  0x000216b0     0x98  misc.o [1]
+  .text                ro code  0x00021748    0x164  MKL_dma.o [1]
+  .text                ro code  0x000218ac    0x2dc  MKL_uart.o [1]
+  .text                ro code  0x00021b88    0x40c  SCCB.o [1]
+  .text                ro code  0x00021f94    0x2cc  MKL_i2c.o [1]
+  .text                ro code  0x00022260    0x480  PID.o [1]
+  .rodata              const    0x000226e0    0x5f0  LCD.o [1]
+  .rodata              const    0x00022cd0    0x5f0  TFT.o [1]
+  .rodata              const    0x000232c0    0x474  TFT.o [1]
+  .text                ro code  0x00023734    0x338  MKL_mcg.o [1]
+  .rodata              const    0x00023a6c    0x228  LCD.o [1]
+  .rodata              const    0x00023c94    0x180  LCD.o [1]
+  .text                ro code  0x00023e14    0x16c  system_MKL.o [1]
+  .text                ro code  0x00023f80     0x20  MKL_wdog.o [1]
+  .rodata              const    0x00023fa0    0x104  main.o [1]
+  .data_init                    0x000240a4     0xf4  <Block>
+    Initializer bytes  ro data  0x000240a4     0xf4  <for .data-1>
+  .rodata              const    0x00024198     0x80  MKL_i2c.o [1]
+  .rodata              const    0x00024218     0x3c  MKL_SysTick.o [1]
+  .rodata              const    0x00024254     0x38  MKL_dma.o [1]
+  .rodata              const    0x0002428c     0x38  MKL_lptmr.o [1]
+  .rodata              const    0x000242c4     0x38  MKL_PIT.o [1]
+  .rodata              const    0x000242fc     0x38  MKL_spi.o [1]
+  .rodata              const    0x00024334     0x38  MKL_TPM.o [1]
+  .rodata              const    0x0002436c     0x34  IR.o [1]
+  .rodata              const    0x000243a0     0x34  misc.o [1]
+  .text                ro code  0x000243d4     0x28  data_init.o [5]
+  .iar.init_table      const    0x000243fc     0x10  - Linker created -
+  .text                ro code  0x0002440c     0x1a  cmain.o [5]
+  .text                ro code  0x00024426      0x4  low_level_init.o [3]
+  .text                ro code  0x0002442a      0x8  exit.o [3]
+  .text                ro code  0x00024434      0xa  cexit.o [5]
+  .text                ro code  0x00024440     0x14  exit.o [6]
+  .rodata              const    0x00024454     0x14  keyboard.o [1]
+  .rodata              const    0x00024468     0x14  keyboard.o [1]
+  .rodata              const    0x0002447c     0x14  keyboard.o [1]
+  .rodata              const    0x00024490     0x14  keyboard.o [1]
+  .rodata              const    0x000244a4     0x10  keyboard.o [1]
+  .rodata              const    0x000244b4      0xc  keyboard.o [1]
+  .rodata              const    0x000244c0      0xc  keyboard.o [1]
+  .rodata              const    0x000244cc      0xc  keyboard.o [1]
+  .rodata              const    0x000244d8      0xc  keyboard.o [1]
+  .rodata              const    0x000244e4      0xc  keyboard.o [1]
+  .rodata              const    0x000244f0      0xc  keyboard.o [1]
+  .rodata              const    0x000244fc      0xc  keyboard.o [1]
+  .rodata              const    0x00024508      0xc  project.o [1]
+  .rodata              const    0x00024514      0xc  project.o [1]
+  .rodata              const    0x00024520      0xc  project.o [1]
+  .rodata              const    0x0002452c      0xc  project.o [1]
+  .rodata              const    0x00024538      0xc  project.o [1]
+  .rodata              const    0x00024544      0xc  project.o [1]
+  .text                ro code  0x00024550      0xc  cstartup_M.o [5]
+  .rodata              const    0x0002455c      0x8  keyboard.o [1]
+  .rodata              const    0x00024564      0x8  keyboard.o [1]
+  .rodata              const    0x0002456c      0x8  keyboard.o [1]
+  .rodata              const    0x00024574      0x8  project.o [1]
+  Initializer bytes    ro data  0x0002457c      0x4  <for P2 s0>
+                              - 0x00024580  0x24168
+
+"P2":                                        0x6654
+  .data                         0x1fffe410     0xf4  <Block>
+    .data-1                     0x1fffe410     0xf2  <Init block>
+      .data            inited   0x1fffe410      0x2  Catch.o [1]
+      .data            inited   0x1fffe412      0x2  Catch.o [1]
+      .data            inited   0x1fffe414      0x2  Catch.o [1]
+      .data            inited   0x1fffe416      0x2  Catch.o [1]
+      .data            inited   0x1fffe418      0x2  Catch.o [1]
+      .data            inited   0x1fffe41a      0x2  Catch.o [1]
+      .data            inited   0x1fffe41c      0x1  Catch.o [1]
+      .data            inited   0x1fffe41e      0x2  Catch.o [1]
+      .data            inited   0x1fffe420      0x2  Catch.o [1]
+      .data            inited   0x1fffe422      0x2  Catch.o [1]
+      .data            inited   0x1fffe424      0x2  Catch.o [1]
+      .data            inited   0x1fffe426      0x2  Catch.o [1]
+      .data            inited   0x1fffe428      0x1  IR.o [1]
+      .data            inited   0x1fffe429      0x1  keyboard.o [1]
+      .data            inited   0x1fffe42c      0x4  keyboard.o [1]
+      .data            inited   0x1fffe430      0x1  keyboard.o [1]
+      .data            inited   0x1fffe431      0x1  keyboard.o [1]
+      .data            inited   0x1fffe434      0x4  main.o [1]
+      .data            inited   0x1fffe438      0x4  main.o [1]
+      .data            inited   0x1fffe43c     0x14  MKL_gpio.o [1]
+      .data            inited   0x1fffe450      0x8  MKL_i2c.o [1]
+      .data            inited   0x1fffe458     0x34  MKL_mcg.o [1]
+      .data            inited   0x1fffe48c      0x4  MKL_mcg.o [1]
+      .data            inited   0x1fffe490     0x14  MKL_port.o [1]
+      .data            inited   0x1fffe4a4      0x8  MKL_spi.o [1]
+      .data            inited   0x1fffe4ac      0xc  MKL_TPM.o [1]
+      .data            inited   0x1fffe4b8      0xc  MKL_uart.o [1]
+      .data            inited   0x1fffe4c4      0x4  PID.o [1]
+      .data            inited   0x1fffe4c8      0x4  PID.o [1]
+      .data            inited   0x1fffe4cc      0x4  PID.o [1]
+      .data            inited   0x1fffe4d0      0x4  PID.o [1]
+      .data            inited   0x1fffe4d4      0x4  PID.o [1]
+      .data            inited   0x1fffe4d8      0x4  PID.o [1]
+      .data            inited   0x1fffe4dc      0x4  PID.o [1]
+      .data            inited   0x1fffe4e0      0x4  PID.o [1]
+      .data            inited   0x1fffe4e4      0x4  PID.o [1]
+      .data            inited   0x1fffe4e8      0x4  PID.o [1]
+      .data            inited   0x1fffe4ec      0x4  PID.o [1]
+      .data            inited   0x1fffe4f0      0x4  PID.o [1]
+      .data            inited   0x1fffe4f4      0x4  PID.o [1]
+      .data            inited   0x1fffe4f8      0x4  PID.o [1]
+      .data            inited   0x1fffe4fc      0x4  project.o [1]
+      .data            inited   0x1fffe500      0x2  TFT.o [1]
+  .bss                          0x1fffe504   0x6559  <Block>
+    .bss               zero     0x1fffe504   0x5654  Catch.o [1]
+    .bss               zero     0x20003b58    0x258  Catch.o [1]
+    .bss               zero     0x20003db0    0x4b0  Catch.o [1]
+    .bss               zero     0x20004260    0x4b0  Catch.o [1]
+    .bss               zero     0x20004710     0x64  Catch.o [1]
+    .bss               zero     0x20004774     0x64  Catch.o [1]
+    .bss               zero     0x200047d8      0x4  Catch.o [1]
+    .bss               zero     0x200047dc    0x194  Catch.o [1]
+    .bss               zero     0x20004970      0x4  Catch.o [1]
+    .bss               zero     0x20004974      0x4  IR.o [1]
+    .bss               zero     0x20004978      0x4  IR.o [1]
+    .bss               zero     0x2000497c      0x4  IR.o [1]
+    .bss               zero     0x20004980      0x4  IR.o [1]
+    .bss               zero     0x20004984      0x4  IR.o [1]
+    .bss               zero     0x20004988      0x4  line_math.o [1]
+    .bss               zero     0x2000498c      0x4  main.o [1]
+    .bss               zero     0x20004990     0x14  main.o [1]
+    .bss               zero     0x200049a4      0x4  main.o [1]
+    .bss               zero     0x200049a8      0x4  main.o [1]
+    .bss               zero     0x200049ac      0x4  main.o [1]
+    .bss               zero     0x200049b0      0x4  main.o [1]
+    .bss               zero     0x200049b4      0x4  main.o [1]
+    .bss               zero     0x200049b8      0x4  MKL_wdog.o [1]
+    .bss               zero     0x200049bc      0x4  PID.o [1]
+    .bss               zero     0x200049c0      0x4  PID.o [1]
+    .bss               zero     0x200049c4      0x4  PID.o [1]
+    .bss               zero     0x200049c8      0x4  PID.o [1]
+    .bss               zero     0x200049cc      0x4  PID.o [1]
+    .bss               zero     0x200049d0      0x4  PID.o [1]
+    .bss               zero     0x200049d4      0x4  PID.o [1]
+    .bss               zero     0x200049d8      0x4  PID.o [1]
+    .bss               zero     0x200049dc      0x4  PID.o [1]
+    .bss               zero     0x200049e0      0x4  PID.o [1]
+    .bss               zero     0x200049e4      0x4  PID.o [1]
+    .bss               zero     0x200049e8      0x4  PID.o [1]
+    .bss               zero     0x200049ec      0x4  PID.o [1]
+    .bss               zero     0x200049f0      0x4  PID.o [1]
+    .bss               zero     0x200049f4      0x4  PID.o [1]
+    .bss               zero     0x200049f8      0x4  PID.o [1]
+    .bss               zero     0x200049fc      0x4  project.o [1]
+    .bss               zero     0x20004a00      0x4  project.o [1]
+    .bss               zero     0x20004a04      0x4  system_MKL.o [1]
+    .bss               zero     0x20004a08      0x4  system_MKL.o [1]
+    .bss               zero     0x20004a0c      0x4  system_MKL.o [1]
+    .bss               zero     0x20004a10      0x4  system_MKL.o [1]
+    .bss               zero     0x20004a14      0xc  TFT.o [1]
+    .bss               zero     0x20004a20      0x2  Catch.o [1]
+    .bss               zero     0x20004a22      0x2  Catch.o [1]
+    .bss               zero     0x20004a24      0x2  Catch.o [1]
+    .bss               zero     0x20004a26      0x2  Catch.o [1]
+    .bss               zero     0x20004a28      0x2  Catch.o [1]
+    .bss               zero     0x20004a2a      0x2  Catch.o [1]
+    .bss               zero     0x20004a2c      0x2  Catch.o [1]
+    .bss               zero     0x20004a2e      0x2  Catch.o [1]
+    .bss               zero     0x20004a30      0x2  Catch.o [1]
+    .bss               zero     0x20004a32      0x2  Catch.o [1]
+    .bss               zero     0x20004a34      0x2  Catch.o [1]
+    .bss               zero     0x20004a36      0x2  Catch.o [1]
+    .bss               zero     0x20004a38      0x2  Catch.o [1]
+    .bss               zero     0x20004a3a      0x2  Catch.o [1]
+    .bss               zero     0x20004a3c      0x2  main.o [1]
+    .bss               zero     0x20004a3e      0x2  main.o [1]
+    .bss               zero     0x20004a40      0x2  main.o [1]
+    .bss               zero     0x20004a42      0x2  main.o [1]
+    .bss               zero     0x20004a44      0x2  main.o [1]
+    .bss               zero     0x20004a46      0x2  SCCB.o [1]
+    .bss               zero     0x20004a48      0x2  TFT.o [1]
+    .bss               zero     0x20004a4a      0x1  Catch.o [1]
+    .bss               zero     0x20004a4b      0x1  Catch.o [1]
+    .bss               zero     0x20004a4c      0x1  Catch.o [1]
+    .bss               zero     0x20004a4d      0x1  Catch.o [1]
+    .bss               zero     0x20004a4e      0x1  Catch.o [1]
+    .bss               zero     0x20004a4f      0x1  IR.o [1]
+    .bss               zero     0x20004a50      0x1  IR.o [1]
+    .bss               zero     0x20004a51      0x1  IR.o [1]
+    .bss               zero     0x20004a52      0x1  keyboard.o [1]
+    .bss               zero     0x20004a53      0x1  keyboard.o [1]
+    .bss               zero     0x20004a54      0x1  keyboard.o [1]
+    .bss               zero     0x20004a55      0x1  keyboard.o [1]
+    .bss               zero     0x20004a56      0x1  LCD.o [1]
+    .bss               zero     0x20004a57      0x1  main.o [1]
+    .bss               zero     0x20004a58      0x1  main.o [1]
+    .bss               zero     0x20004a59      0x1  main.o [1]
+    .bss               zero     0x20004a5a      0x1  main.o [1]
+    .bss               zero     0x20004a5b      0x1  PID.o [1]
+    .bss               zero     0x20004a5c      0x1  rollway.o [1]
+  CodeRelocateRam               0x20004a5d      0x0  <Block>
+  P2 s0                         0x20004a60      0x4  <Init block>
+    __DLIB_PERTHREAD   inited   0x20004a60      0x4  errno.o [3]
+                              - 0x20004a64   0x6654
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x6559:
+          0x1fffe504  0x6559
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+C:\Users\love  ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj: [1]
+    Catch.o            25 520   88 424   25 768
+    IR.o                  520       53       24
+    LCD.o               1 400    2 456        1
+    MKL_PIT.o             200       56
+    MKL_SysTick.o         132       60
+    MKL_TPM.o           1 208       68       12
+    MKL_dma.o             356       56
+    MKL_gpio.o            696       20       20
+    MKL_i2c.o             716      136        8
+    MKL_lptmr.o           196       56
+    MKL_mcg.o             824       56       56
+    MKL_port.o             80       20       20
+    MKL_spi.o             644       64        8
+    MKL_uart.o            732       12       12
+    MKL_wdog.o             32                 4
+    PID.o               1 152       56      121
+    SCCB.o              1 036                 2
+    TFT.o               2 228    2 662       16
+    conf.o                  4
+    keyboard.o          3 596      213       11
+    line_math.o         1 800                 4
+    main.o              1 632      270       66
+    misc.o                152       52
+    project.o           1 248       84       12
+    rollway.o           1 048                 1
+    startup_MKL.o           8
+    system_MKL.o          364                16
+    vectors.o                    1 040
+    -------------------------------------------
+    Total:             47 524   95 914   26 182
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    abs.o                   8
+    errno.o                16        4        4
+    exit.o                  8
+    low_level_init.o        4
+    xtls.o                  2
+    -------------------------------------------
+    Total:                 38        4        4
+
+m6M_tl.a: [4]
+    DblAddSub.o           436
+    DblCmpEq.o             36
+    DblCmpGe.o             50
+    DblCmpLe.o             50
+    DblDiv.o              194
+    DblMul.o              388
+    DblToFlt.o             98
+    DblToI32.o             78
+    FltAddSub.o           288
+    FltCmpEq.o             32
+    FltCmpGe.o             40
+    FltCmpLe.o             38
+    FltDiv.o              170
+    FltMul.o              180
+    FltToDbl.o             50
+    FltToS32.o             58
+    FltToU32.o             38
+    I32ToDbl.o             52
+    I32ToFlt.o             54
+    atan.o                168
+    cos.o                  10
+    fmod.o                198
+    sin.o                  10
+    xatan.o               480
+    xdint.o               140
+    xquad.o               372
+    xsin.o              1 100
+    -------------------------------------------
+    Total:              4 808
+
+rt6M_tl.a: [5]
+    ABImemcpy.o            92
+    ABImemset.o            52
+    I32DivModFast.o       224
+    IntDivZer.o             2
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    iarEdom.o              12
+    zero_init3.o           42
+    -------------------------------------------
+    Total:                512
+
+shb_l.a: [6]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                   26                 5
+    Linker created                  18
+-----------------------------------------------
+    Grand Total:       52 928   95 936   26 191
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.bss$$Base              0x1fffe504           --   Gb  - Linker created -
+.bss$$Limit             0x20004a5d           --   Gb  - Linker created -
+.data$$Base             0x1fffe410           --   Gb  - Linker created -
+.data$$Limit            0x1fffe504           --   Gb  - Linker created -
+.data_init$$Base        0x000240a4           --   Gb  - Linker created -
+.data_init$$Limit       0x00024198           --   Gb  - Linker created -
+?main                   0x0002440d          Code  Gb  cmain.o [5]
+Adjust_RunTimeOut       0x20004a54     0x1  Data  Gb  keyboard.o [1]
+Adjust_Runtime          0x1fffe430     0x1  Data  Gb  keyboard.o [1]
+BACK_COLOR              0x1fffe500     0x2  Data  Gb  TFT.o [1]
+CAM_get                 0x00015d69   0x938  Code  Gb  Catch.o [1]
+CAT_read                0x00021de5    0x78  Code  Gb  SCCB.o [1]
+CAT_write               0x00021d57    0x8e  Code  Gb  SCCB.o [1]
+CNTS_BMQ_Left           0x200049ac     0x4  Data  Gb  main.o [1]
+CNTS_BMQ_Right          0x200049b0     0x4  Data  Gb  main.o [1]
+Chinese16X16            0x00023c94   0x180  Data  Gb  LCD.o [1]
+ChooseAdjust            0x0001ee99    0xd4  Code  Gb  keyboard.o [1]
+ChooseGear              0x0001e9b9   0x4cc  Code  Gb  keyboard.o [1]
+ChooseGearDraw          0x0001e54d    0x88  Code  Gb  keyboard.o [1]
+ChooseMode              0x0001ef99   0x11e  Code  Gb  keyboard.o [1]
+CodeRelocate$$Base      0x00000410           --   Gb  - Linker created -
+CodeRelocate$$Limit     0x00000410           --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x20004a5d           --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x20004a5d           --   Gb  - Linker created -
+Delete_In_Corner        0x0001ce55   0x164  Code  Gb  rollway.o [1]
+F6x8                    0x00023a6c   0x228  Data  Gb  LCD.o [1]
+F8X16                   0x000226e0   0x5f0  Data  Gb  LCD.o [1]
+GPIOINT_Clear           0x0001c47b    0x1a  Code  Gb  MKL_gpio.o [1]
+GPIOINT_Disable         0x0001c451    0x2a  Code  Gb  MKL_gpio.o [1]
+GPIOINT_Enable          0x0001c403    0x4e  Code  Gb  MKL_gpio.o [1]
+GPIOPULL_SET            0x0001c38d    0x76  Code  Gb  MKL_gpio.o [1]
+GPIOX                   0x1fffe43c    0x14  Data  Gb  MKL_gpio.o [1]
+GPIO_GET                0x0001c375    0x12  Code  Gb  MKL_gpio.o [1]
+GPIO_INIT               0x0001c2bf    0x80  Code  Gb  MKL_gpio.o [1]
+GPIO_SET                0x0001c33f    0x36  Code  Gb  MKL_gpio.o [1]
+I2CN                    0x1fffe450     0x8  Data  Gb  MKL_i2c.o [1]
+IR_Control              0x0001fea3    0x78  Code  Gb  IR.o [1]
+IR_Get                  0x0001fdeb    0xb8  Code  Gb  IR.o [1]
+IR_INIT                 0x0001fdbf    0x2c  Code  Gb  IR.o [1]
+IS_After_6s             0x20004a4f     0x1  Data  Gb  IR.o [1]
+IS_Stop_ByIR            0x1fffe431     0x1  Data  Gb  keyboard.o [1]
+Init_L3G4200D           0x00022221    0x40  Code  Gb  MKL_i2c.o [1]
+Key_get                 0x0001e43b   0x112  Code  Gb  keyboard.o [1]
+Key_init                0x0001e3bf    0x7c  Code  Gb  keyboard.o [1]
+LCD_6x8Str              0x0001f4b3    0x64  Code  Gb  LCD.o [1]
+LCD_6x8char             0x0001f517    0x40  Code  Gb  LCD.o [1]
+LCD_8x16Str             0x0001f557    0xa2  Code  Gb  LCD.o [1]
+LCD_8x16Str_Reverse     0x0001f5f9    0xaa  Code  Gb  LCD.o [1]
+LCD_DrawPoint           0x00020595    0x18  Code  Gb  TFT.o [1]
+LCD_Fill                0x0001f343    0x3c  Code  Gb  LCD.o [1]
+LCD_Init                0x0001f3b7    0xfc  Code  Gb  LCD.o [1]
+LCD_Pow                 0x00020a21    0x18  Code  Gb  TFT.o [1]
+LCD_SetCursor           0x00020551    0x44  Code  Gb  TFT.o [1]
+LCD_Set_Pos             0x0001f31b    0x28  Code  Gb  LCD.o [1]
+LCD_ShowChar            0x00020885   0x186  Code  Gb  TFT.o [1]
+LCD_ShowNum             0x00020a39    0xc4  Code  Gb  TFT.o [1]
+LCD_WR_DATA             0x00020505    0x26  Code  Gb  TFT.o [1]
+LCD_WR_DATA8            0x0002052b    0x18  Code  Gb  TFT.o [1]
+LCD_WR_REG              0x000204e9    0x1c  Code  Gb  TFT.o [1]
+LCD_WrCmd               0x0001f2ab    0x70  Code  Gb  LCD.o [1]
+LCD_WrDat               0x0001f241    0x6a  Code  Gb  LCD.o [1]
+LCD_WriteRAM_Prepare    0x00020543     0xe  Code  Gb  TFT.o [1]
+LCD_char16x16           0x0001f6a9    0x60  Code  Gb  LCD.o [1]
+LCD_clear               0x0001f37f    0x38  Code  Gb  LCD.o [1]
+LED_ON                  0x0001fb19    0x12  Code  Gb  project.o [1]
+MT34_Read               0x00021edb    0x88  Code  Gb  SCCB.o [1]
+MT34_Write              0x00021e5d    0x7e  Code  Gb  SCCB.o [1]
+MT34_init               0x00021f63    0x28  Code  Gb  SCCB.o [1]
+Mid_PWM                 0x1fffe4fc     0x4  Data  Gb  project.o [1]
+NVIC_EnableIRQ          0x0001e3b1     0xe  Code  Lc  keyboard.o [1]
+NVIC_EnableIRQ          0x00021051     0xe  Code  Lc  main.o [1]
+Not_Started             0x1fffe428     0x1  Data  Gb  IR.o [1]
+OLED_image              0x0001f709    0xa0  Code  Gb  LCD.o [1]
+OLED_init               0x0001f867    0xa4  Code  Gb  project.o [1]
+Open_TFT                0x20004a55     0x1  Data  Gb  keyboard.o [1]
+PID_speed               0x000224b1   0x1d6  Code  Gb  PID.o [1]
+PITINT_Enable           0x0001fd31    0x1e  Code  Gb  MKL_PIT.o [1]
+PIT_Enable              0x0001fd13    0x1e  Code  Gb  MKL_PIT.o [1]
+PIT_IRQHandler          0x000214ed   0x136  Code  Gb  main.o [1]
+POINT_COLOR             0x20004a48     0x2  Data  Gb  TFT.o [1]
+PORTC_D_IRQHandler      0x000213d9    0xc0  Code  Gb  main.o [1]
+PORTX                   0x1fffe490    0x14  Data  Gb  MKL_port.o [1]
+PORT_Enable_ALL         0x0001d917    0x10  Code  Gb  MKL_port.o [1]
+Pause                   0x000220a5    0x20  Code  Gb  MKL_i2c.o [1]
+RST0                    0x00000418  0xaca8  Data  Gb  Catch.o [1]
+RST1                    0x0000b0c0  0xaca8  Data  Gb  Catch.o [1]
+RUN_TIME_MODE           0x20004a53     0x1  Data  Gb  keyboard.o [1]
+R_main                  0x1fffe41e     0x2  Data  Gb  Catch.o [1]
+Ready_Stop              0x20004a50     0x1  Data  Gb  IR.o [1]
+Region$$Table$$Base     0x000243fc           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0002440c           --   Gb  - Linker created -
+Reset_Handler           0x00000411          Code  Gb  startup_MKL.o [1]
+SCCB_CAT_Start          0x00021be7    0x44  Code  Gb  SCCB.o [1]
+SCCB_CAT_Stop           0x00021c2b    0x44  Code  Gb  SCCB.o [1]
+SCCB_init               0x00021b89    0x5e  Code  Gb  SCCB.o [1]
+SET_IRQ_PRIOR           0x000216d1    0x42  Code  Gb  misc.o [1]
+SPIN                    0x1fffe4a4     0x8  Data  Gb  MKL_spi.o [1]
+SPI_Send                0x00020fbf    0x74  Code  Gb  MKL_spi.o [1]
+SYSDelay_us             0x0001f20d    0x20  Code  Gb  MKL_SysTick.o [1]
+Switch_init             0x0001e915    0xa4  Code  Gb  keyboard.o [1]
+TFT_Clear               0x00020845    0x32  Code  Gb  TFT.o [1]
+TFT_Init                0x000205ad   0x298  Code  Gb  TFT.o [1]
+TPMN                    0x1fffe4ac     0xc  Data  Gb  MKL_TPM.o [1]
+ThouSet                 0x0001f0e5    0x6a  Code  Gb  keyboard.o [1]
+UARTN                   0x1fffe4b8     0xc  Data  Gb  MKL_uart.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x20005ff8           --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fffe000           --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000           --   Gb  command line/config [2]
+__aeabi_cdcmpeq         0x0001e2b9          Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x0001d951          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x0001d983          Code  Gb  DblCmpGe.o [4]
+__aeabi_cfcmpeq         0x0001d931          Code  Gb  FltCmpEq.o [4]
+__aeabi_cfcmple         0x0001d2fd          Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x0001d2d5          Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x0001d4a9          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x0001d885          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x0001d541          Code  Gb  DblAddSub.o [4]
+__aeabi_ddiv            0x0001d9b5          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x0001d6ff          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x0001d607          Code  Gb  DblAddSub.o [4]
+__aeabi_errno_addr      0x0001e0a5     0xa  Code  Gb  errno.o [3]
+__aeabi_f2d             0x0001d3cd          Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x0001d391          Code  Gb  FltToS32.o [4]
+__aeabi_f2uiz           0x00020da5          Code  Gb  FltToU32.o [4]
+__aeabi_fadd            0x0001d02d          Code  Gb  FltAddSub.o [4]
+__aeabi_fdiv            0x0001d14d          Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x0001d1f7          Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x0001d09d          Code  Gb  FltAddSub.o [4]
+__aeabi_i2d             0x0001d50d          Code  Gb  I32ToDbl.o [4]
+__aeabi_i2f             0x0001d359          Code  Gb  I32ToFlt.o [4]
+__aeabi_idiv            0x0001c145          Code  Gb  I32DivModFast.o [5]
+__aeabi_idiv0           0x0001d8dd          Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod         0x0001c145          Code  Gb  I32DivModFast.o [5]
+__aeabi_memclr4         0x0001d355          Code  Gb  ABImemset.o [5]
+__aeabi_memclr8         0x0001d355          Code  Gb  ABImemset.o [5]
+__aeabi_memcpy          0x0001cfd1          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x0001cff9          Code  Wk  ABImemcpy.o [5]
+__aeabi_ui2d            0x0001d521          Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f            0x0001d371          Code  Gb  I32ToFlt.o [4]
+__aeabi_uidiv           0x0001c14b          Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x0001c14b          Code  Gb  I32DivModFast.o [5]
+__as_entries_start      0xffffffff           --   Gb  command line/config [2]
+__as_table_start        0xffffffff           --   Gb  command line/config [2]
+__cmain                 0x0002440d          Code  Gb  cmain.o [5]
+__exit                  0x00024441    0x14  Code  Gb  exit.o [6]
+__iar_Atan              0x0001da79   0x148  Code  Gb  xatan.o [4]
+__iar_Dint              0x0001e22d    0x8c  Code  Gb  xdint.o [4]
+__iar_Errno             0x20004a60     0x4  Data  Gb  errno.o [3]
+__iar_Memset4_word      0x0001d325          Code  Gb  ABImemset.o [5]
+__iar_Quad              0x0001e0b5   0x174  Code  Gb  xquad.o [4]
+__iar_Sin               0x0001dc59   0x44c  Code  Gb  xsin.o [4]
+__iar_d2uiz             0x0001d8a9          Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x000243d5    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x0001e229     0x2  Code  Gb  xtls.o [3]
+__iar_edom              0x0001e3a5          Code  Gb  iarEdom.o [5]
+__iar_fmod              0x0001e2dd          Code  Gb  fmod.o [4]
+__iar_fmodl             0x0001e2dd          Code  Gb  fmod.o [4]
+__iar_program_start     0x00024551          Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x0001d525          Code  Gb  I32ToDbl.o [4]
+__iar_ui2f              0x0001d375          Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x0001d2ab    0x2a  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00024427     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000   0x410  Data  Gb  vectors.o [1]
+_call_main              0x00024419          Code  Gb  cmain.o [5]
+_exit                   0x00024435          Code  Gb  cexit.o [5]
+_main                   0x00024423          Code  Gb  cmain.o [5]
+a                       0x0001dc18    0x40  Data  Lc  xatan.o [4]
+abs                     0x00020d9d     0x8  Code  Gb  abs.o [3]
+add_line                0x1fffe41c     0x1  Data  Gb  Catch.o [1]
+angle_type              0x20004a5c     0x1  Data  Gb  rollway.o [1]
+area_sum                0x0001bd77    0x42  Code  Gb  Catch.o [1]
+asc2_1206               0x000232c0   0x474  Data  Gb  TFT.o [1]
+asc2_1608               0x00022cd0   0x5f0  Data  Gb  TFT.o [1]
+assert_failed           0x0001ff69     0x2  Code  Gb  conf.o [1]
+atan                    0x0001d401    0xa8  Code  Gb  atan.o [4]
+auto_left_times         0x20004a2e     0x2  Data  Gb  Catch.o [1]
+auto_right_times        0x20004a30     0x2  Data  Gb  Catch.o [1]
+auto_threshold_left     0x20004710    0x64  Data  Gb  Catch.o [1]
+auto_threshold_right    0x20004774    0x64  Data  Gb  Catch.o [1]
+b                       0x20004988     0x4  Data  Gb  line_math.o [1]
+bus_clk_khz             0x20004a10     0x4  Data  Gb  system_MKL.o [1]
+center                  0x20003b58   0x258  Data  Gb  Catch.o [1]
+center_2                0x200047dc   0x194  Data  Gb  Catch.o [1]
+center_change           0x20004a24     0x2  Data  Gb  Catch.o [1]
+center_dot              0x20004a22     0x2  Data  Gb  Catch.o [1]
+change_get              0x0001bd11    0x66  Code  Gb  Catch.o [1]
+change_get2             0x0001cbb9   0x296  Code  Gb  rollway.o [1]
+change_left_dot         0x20004a34     0x2  Data  Gb  Catch.o [1]
+change_right_dot        0x20004a36     0x2  Data  Gb  Catch.o [1]
+change_times            0x20004a4d     0x1  Data  Gb  Catch.o [1]
+check_ACK               0x00021cf7    0x60  Code  Gb  SCCB.o [1]
+clear_image             0x00020bbd    0x34  Code  Gb  TFT.o [1]
+clk_out_init            0x00023e97    0x24  Code  Gb  system_MKL.o [1]
+close_motor             0x20004a5b     0x1  Data  Gb  PID.o [1]
+common_startup          0x00023ebb    0x7a  Code  Gb  system_MKL.o [1]
+core_clk_khz            0x20004a08     0x4  Data  Gb  system_MKL.o [1]
+core_clk_mhz            0x20004a0c     0x4  Data  Gb  system_MKL.o [1]
+cos                     0x0001d8d3     0xa  Code  Gb  cos.o [4]
+count_pwm1              0x200049fc     0x4  Data  Gb  project.o [1]
+count_pwm1_tmp          0x200049a4     0x4  Data  Gb  main.o [1]
+count_pwm2              0x20004a00     0x4  Data  Gb  project.o [1]
+count_pwm2_tmp          0x200049a8     0x4  Data  Gb  main.o [1]
+datata                  0x20004a56     0x1  Data  Gb  LCD.o [1]
+date                    0x1fffe504  0x5654  Data  Gb  Catch.o [1]
+default_isr             0x0001ff6b     0x2  Code  Gb  conf.o [1]
+desier_driver1          0x200049f4     0x4  Data  Gb  PID.o [1]
+desier_driver2          0x200049f8     0x4  Data  Gb  PID.o [1]
+desier_get              0x00022389   0x10e  Code  Gb  PID.o [1]
+display                 0x0001f9dd    0xf4  Code  Gb  project.o [1]
+dma_portx2buff_init     0x00021749   0x164  Code  Gb  MKL_dma.o [1]
+dma_repeat              0x0002105f    0x68  Code  Lc  main.o [1]
+driver                  0x1fffe4f0     0x4  Data  Gb  PID.o [1]
+ecode_clear             0x0001f859     0xe  Code  Gb  project.o [1]
+ecode_get               0x0001f7f9    0x60  Code  Gb  project.o [1]
+ecode_init              0x0001f7b9    0x40  Code  Gb  project.o [1]
+exit                    0x0002442b     0x8  Code  Gb  exit.o [3]
+flag_6s                 0x20004a5a     0x1  Data  Gb  main.o [1]
+flag_photo              0x20004a58     0x1  Data  Gb  main.o [1]
+fmod                    0x0001e2dd          Code  Gb  fmod.o [4]
+fmodl                   0x0001e2dd          Code  Gb  fmod.o [4]
+for_ward                0x1fffe42c     0x4  Data  Gb  keyboard.o [1]
+forward_end             0x1fffe426     0x2  Data  Gb  Catch.o [1]
+forward_see             0x1fffe424     0x2  Data  Gb  Catch.o [1]
+get_hang                0x00023fa0   0x104  Data  Gb  main.o [1]
+get_roll_left           0x0001b7ed   0x524  Code  Gb  Catch.o [1]
+get_roll_right          0x0001b26d   0x55c  Code  Gb  Catch.o [1]
+get_servo               0x200049ec     0x4  Data  Gb  PID.o [1]
+gpio_init               0x0001c1f9    0xc6  Code  Gb  MKL_gpio.o [1]
+hang_scan               0x0001728d   0x8ac  Code  Gb  Catch.o [1]
+i2c_init                0x00021f95   0x110  Code  Gb  MKL_i2c.o [1]
+i2c_write_reg           0x000220e9   0x132  Code  Gb  MKL_i2c.o [1]
+identify_angle          0x0001bde1   0x30a  Code  Gb  Catch.o [1]
+image_i                 0x20004a3c     0x2  Data  Gb  main.o [1]
+image_j                 0x20004a3e     0x2  Data  Gb  main.o [1]
+image_n                 0x20004a40     0x2  Data  Gb  main.o [1]
+image_temp              0x20004a44     0x2  Data  Gb  main.o [1]
+image_test              0x20004a57     0x1  Data  Gb  main.o [1]
+image_times             0x200047d8     0x4  Data  Gb  Catch.o [1]
+in_PIT_times            0x200049b4     0x4  Data  Gb  main.o [1]
+input_servor            0x1fffe434     0x4  Data  Gb  main.o [1]
+ir_counter_Big          0x20004974     0x4  Data  Gb  IR.o [1]
+ir_counter_Small        0x20004978     0x4  Data  Gb  IR.o [1]
+ir_flag_AB              0x20004984     0x4  Data  Gb  IR.o [1]
+ir_flag_Big             0x2000497c     0x4  Data  Gb  IR.o [1]
+ir_flag_Small           0x20004980     0x4  Data  Gb  IR.o [1]
+k_output                0x200049c8     0x4  Data  Gb  PID.o [1]
+k_p                     0x1fffe4e0     0x4  Data  Gb  PID.o [1]
+k_ptemp                 0x200049e4     0x4  Data  Gb  PID.o [1]
+key_run                 0x0001e605   0x2bc  Code  Gb  keyboard.o [1]
+lcddev                  0x20004a14     0xc  Data  Gb  TFT.o [1]
+led_init                0x0001faed    0x2c  Code  Gb  project.o [1]
+left_dot                0x20004a26     0x2  Data  Gb  Catch.o [1]
+left_last               0x20004a2a     0x2  Data  Gb  Catch.o [1]
+left_line               0x20003db0   0x4b0  Data  Gb  Catch.o [1]
+left_lose               0x20004a4a     0x1  Data  Gb  Catch.o [1]
+lptmr_pulse_clean       0x000204b1    0x1a  Code  Gb  MKL_lptmr.o [1]
+lptmr_pulse_get         0x000204a3     0xe  Code  Gb  MKL_lptmr.o [1]
+lptmr_pulse_init        0x00020425    0x7e  Code  Gb  MKL_lptmr.o [1]
+main                    0x000210c9   0x2f2  Code  Gb  main.o [1]
+mcg_cfg                 0x1fffe458    0x34  Data  Gb  MKL_mcg.o [1]
+mcg_div                 0x1fffe48c     0x4  Data  Gb  MKL_mcg.o [1]
+mcg_div_count           0x00023735   0x21c  Code  Gb  MKL_mcg.o [1]
+middle_PID_control      0x00022261    0xfc  Code  Gb  PID.o [1]
+middle_d                0x1fffe4dc     0x4  Data  Gb  PID.o [1]
+middle_input            0x200049f0     0x4  Data  Gb  PID.o [1]
+middle_input_last       0x200049bc     0x4  Data  Gb  PID.o [1]
+middle_output           0x2000498c     0x4  Data  Gb  main.o [1]
+middle_p                0x1fffe4d8     0x4  Data  Gb  PID.o [1]
+middle_previe           0x200049c0     0x4  Data  Gb  PID.o [1]
+middle_sum              0x200049c4     0x4  Data  Gb  PID.o [1]
+middle_sum_max          0x1fffe4c4     0x4  Data  Gb  PID.o [1]
+middle_sum_min          0x1fffe4c8     0x4  Data  Gb  PID.o [1]
+motor_1                 0x1fffe4f4     0x4  Data  Gb  PID.o [1]
+motor_2                 0x1fffe4f8     0x4  Data  Gb  PID.o [1]
+motor_PWM_init          0x0001fb2b    0x34  Code  Gb  project.o [1]
+motor_dutyset           0x0001fb71    0x60  Code  Gb  project.o [1]
+mulu                    0x1fffe429     0x1  Data  Gb  keyboard.o [1]
+my_systick_delay        0x0001fd61    0x40  Code  Gb  IR.o [1]
+my_systick_delay_ms     0x0001fda1    0x1e  Code  Gb  IR.o [1]
+n                       0x20004a42     0x2  Data  Gb  main.o [1]
+open_6s                 0x20004a51     0x1  Data  Gb  IR.o [1]
+pit_init                0x0001fc99    0x7a  Code  Gb  MKL_PIT.o [1]
+pll_clk_mhz             0x20004a04     0x4  Data  Gb  system_MKL.o [1]
+pll_init                0x00023961    0xb8  Code  Gb  MKL_mcg.o [1]
+port_init               0x0001d8e1    0x36  Code  Gb  MKL_port.o [1]
+pwm_add                 0x20004990    0x14  Data  Gb  main.o [1]
+read_ru                 0x20004a46     0x2  Data  Gb  SCCB.o [1]
+right_dot               0x20004a28     0x2  Data  Gb  Catch.o [1]
+right_last              0x1fffe410     0x2  Data  Gb  Catch.o [1]
+right_line              0x20004260   0x4b0  Data  Gb  Catch.o [1]
+right_lose              0x20004a4b     0x1  Data  Gb  Catch.o [1]
+scan_mode               0x20004a4c     0x1  Data  Gb  Catch.o [1]
+servo_driver_init       0x0001fbe1    0x10  Code  Gb  project.o [1]
+servo_set               0x0001fc01    0x5e  Code  Gb  project.o [1]
+set_vector_handler      0x00021713    0x24  Code  Gb  misc.o [1]
+show_all_TFT            0x0001f90b    0xb0  Code  Gb  project.o [1]
+show_dot                0x00020bf1    0x50  Code  Gb  TFT.o [1]
+show_dot_change         0x00020c41    0x84  Code  Gb  TFT.o [1]
+show_dot_change2        0x00020ce9    0x52  Code  Gb  TFT.o [1]
+show_line               0x00020d3b    0x62  Code  Gb  TFT.o [1]
+show_real_pic           0x00020afd    0xc0  Code  Gb  TFT.o [1]
+simple_k_solve          0x0001c755   0x16e  Code  Gb  line_math.o [1]
+sin                     0x0001d6f5     0xa  Code  Gb  sin.o [4]
+single_get_hang         0x20004a38     0x2  Data  Gb  Catch.o [1]
+single_in               0x20004a3a     0x2  Data  Gb  Catch.o [1]
+single_left             0x1fffe420     0x2  Data  Gb  Catch.o [1]
+single_mode             0x000166e9   0x284  Code  Gb  Catch.o [1]
+single_right            0x1fffe422     0x2  Data  Gb  Catch.o [1]
+slave_ACK               0x00021c6f    0x44  Code  Gb  SCCB.o [1]
+slave_NOACK             0x00021cb3    0x44  Code  Gb  SCCB.o [1]
+solv_line_k             0x0001c4b1   0x2a4  Code  Gb  line_math.o [1]
+solv_line_k2            0x0001c8d5   0x2c8  Code  Gb  line_math.o [1]
+speed_d                 0x200049e8     0x4  Data  Gb  PID.o [1]
+speed_error1            0x200049e0     0x4  Data  Gb  PID.o [1]
+speed_error2            0x200049dc     0x4  Data  Gb  PID.o [1]
+speed_i                 0x1fffe4ec     0x4  Data  Gb  PID.o [1]
+speed_last_error1       0x200049cc     0x4  Data  Gb  PID.o [1]
+speed_last_error2       0x200049d4     0x4  Data  Gb  PID.o [1]
+speed_last_twoerror1    0x200049d0     0x4  Data  Gb  PID.o [1]
+speed_last_twoerror2    0x200049d8     0x4  Data  Gb  PID.o [1]
+speed_p                 0x1fffe4e4     0x4  Data  Gb  PID.o [1]
+spi_init                0x00020efb    0xc4  Code  Gb  MKL_spi.o [1]
+spi_pcs_io              0x00020dcd    0x4c  Code  Lc  MKL_spi.o [1]
+spi_set_baud            0x00020e19    0xe2  Code  Gb  MKL_spi.o [1]
+start                   0x00023e15    0x18  Code  Gb  system_MKL.o [1]
+start_encode            0x20004a59     0x1  Data  Gb  main.o [1]
+start_line              0x20004a20     0x2  Data  Gb  Catch.o [1]
+start_run               0x20004a52     0x1  Data  Gb  keyboard.o [1]
+start_single            0x20004a2c     0x2  Data  Gb  Catch.o [1]
+sub_a                   0x1fffe4cc     0x4  Data  Gb  PID.o [1]
+sub_k                   0x1fffe4d0     0x4  Data  Gb  PID.o [1]
+sub_p                   0x1fffe4e8     0x4  Data  Gb  PID.o [1]
+sub_slow                0x1fffe4d4     0x4  Data  Gb  PID.o [1]
+sum_area                0x20004970     0x4  Data  Gb  Catch.o [1]
+sysinit                 0x00023e2d    0x6a  Code  Gb  system_MKL.o [1]
+systick_delay           0x0001f1bd    0x38  Code  Gb  MKL_SysTick.o [1]
+systick_delay_ms        0x0001f1f5    0x18  Code  Gb  MKL_SysTick.o [1]
+threshold               0x1fffe412     0x2  Data  Gb  Catch.o [1]
+threshold_left          0x1fffe414     0x2  Data  Gb  Catch.o [1]
+threshold_left_next     0x1fffe418     0x2  Data  Gb  Catch.o [1]
+threshold_right         0x1fffe416     0x2  Data  Gb  Catch.o [1]
+threshold_right_next    0x1fffe41a     0x2  Data  Gb  Catch.o [1]
+tmp                     0x1fffe438     0x4  Data  Gb  main.o [1]
+tpm_port_mux            0x0001ff6d    0xea  Code  Gb  MKL_TPM.o [1]
+tpm_pulse_clean         0x000203e5    0x10  Code  Gb  MKL_TPM.o [1]
+tpm_pulse_get           0x000203f9    0x10  Code  Gb  MKL_TPM.o [1]
+tpm_pulse_init          0x000202e1    0xfc  Code  Gb  MKL_TPM.o [1]
+tpm_pwm_duty            0x000201f1    0xde  Code  Gb  MKL_TPM.o [1]
+tpm_pwm_init            0x00020057   0x194  Code  Gb  MKL_TPM.o [1]
+two_wile_mode           0x000169a5   0x8be  Code  Gb  Catch.o [1]
+type                    0x20004a32     0x2  Data  Gb  Catch.o [1]
+type1_line              0x000182d1   0x8d0  Code  Gb  Catch.o [1]
+type2_line              0x00018bc1   0x998  Code  Gb  Catch.o [1]
+type3_line              0x00019575   0xa5a  Code  Gb  Catch.o [1]
+type4_line              0x00019fe9   0xe00  Code  Gb  Catch.o [1]
+type6_line              0x0001adf9   0x444  Code  Gb  Catch.o [1]
+type_get                0x00017b51   0x74e  Code  Gb  Catch.o [1]
+type_temp               0x20004a4e     0x1  Data  Gb  Catch.o [1]
+uart_init               0x000218ad   0x264  Code  Gb  MKL_uart.o [1]
+uart_putchar            0x00021b29    0x34  Code  Gb  MKL_uart.o [1]
+wdog_cfg                0x200049b8     0x4  Data  Lc  MKL_wdog.o [1]
+wdog_disable            0x00023f81    0x16  Code  Gb  MKL_wdog.o [1]
+write_vtor              0x000216b1    0x20  Code  Gb  misc.o [1]
+
+
+[1] = C:\Users\love  ben\Desktop\1212\IAR_KL\Prj\IAR\Debug\Obj
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  52 928 bytes of readonly  code memory
+  95 936 bytes of readonly  data memory
+  26 191 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

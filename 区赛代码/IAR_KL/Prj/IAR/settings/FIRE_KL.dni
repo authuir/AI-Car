@@ -1,0 +1,167 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000000
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[DebugChecksum]
+Checksum=-1822179095
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[CodeCoverage]
+Enabled=_ 0
+[array_types]
+Fmt0=uint8[150]	3	0
+Fmt1=uint8[170]	3	0
+Fmt2=uint8[180]	3	0
+Fmt3=uint8[185]	3	0
+Fmt4=uint8[200]	3	0
+Fmt5=uint8[2]	3	0
+Fmt6=uint8[50]	3	0
+[watch_formats]
+Fmt0={W}1:( ((IRQ_PRIOR&0X0F)<<6) <<(8*(IRQ_NUM%4)) )	4	0
+Fmt1={W}1:((IRQ_PRIOR&0X0F)<<(8*((IRQ_NUM-16)%4)+6))	4	0
+Fmt2={W}1:*prio_reg	4	0
+Fmt3={W}1:angle_left_ok	3	0
+Fmt4={W}1:angle_left_times	3	0
+Fmt5={W}1:angle_right_ok	3	0
+Fmt6={W}1:angle_type	3	0
+Fmt7={W}1:flag_photo	3	0
+Fmt8={W}1:ir_begin_flag	3	0
+Fmt9={W}1:key_num	3	0
+Fmt10={W}1:port_date	4	0
+Fmt11={W}1:run_flag	3	0
+Fmt12={W}1:scan_	3	0
+Fmt13={W}1:sum_area	3	0
+Fmt14={W}1:ten_left_ok	3	0
+Fmt15={W}1:ten_right_ok	3	0
+Fmt16={W}1:vtr	3	0
+Fmt17={W}42:angle_type	3	0
+Fmt18={W}42:date+image_i-4	4	0
+Fmt19={W}42:image_test	3	0
+Fmt20={W}42:moutiong	3	0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=1
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp4=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp5=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp6=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp7=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp8=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp9=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp10=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp11=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp12=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp13=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp14=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2245.2" 0 0 1 "" 0 "" 0
+Bp15=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project}.391.9" 0 0 1 "" 0 "" 0
+Bp16=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\rollway.c}.123.17" 0 0 1 "" 0 "" 0
+Bp17=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2055.6" 0 0 1 "" 0 "" 0
+Bp18=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\rollway.c}.79.16" 0 0 1 "" 0 "" 0
+Bp19=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\rollway.c}.88.15" 0 0 1 "" 0 "" 0
+Bp20=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\IR.c}.261.1" 0 0 1 "" 0 "" 0
+Bp21=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\PID.c}.158.5" 0 0 1 "" 0 "" 0
+Bp22=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\project}.138.5" 0 0 1 "" 0 "" 0
+Bp23=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.1754.11" 0 0 1 "" 0 "" 0
+Bp24=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.1726.11" 0 0 1 "" 0 "" 0
+Bp25=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.1780.16" 0 0 1 "" 0 "" 0
+Bp26=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.1795.11" 0 0 1 "" 0 "" 0
+Bp27=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.210.20" 0 0 1 "" 0 "" 0
+Bp28=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2213.21" 0 0 1 "" 0 "" 0
+Bp29=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\project\Catch.c}.2239.21" 0 0 1 "" 0 "" 0
+Count=30
+[Aliases]
+Count=0
+SuppressDialog=0
